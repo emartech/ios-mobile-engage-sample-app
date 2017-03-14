@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32C6F0502D12ECF7E54E733E /* mobile_engage_sample_app_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F740D4C261D2A27B25D7 /* mobile_engage_sample_app_iosUITests.swift */; };
+		32C6F248024B5E239DD442F8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C6FC10EA592FE7DEECC0FE /* Info.plist */; };
+		32C6F4DDF467DDF64D7A451B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C6F16BF0FE4309A9886C64 /* Assets.xcassets */; };
+		32C6F56B575315F60F529D9A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C6FD56D4E3A2AB8A0057EA /* Info.plist */; };
+		32C6F5D1EFAA9AF8D494D386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6FA5B97F3F7E25F3AD0F7 /* Main.storyboard */; };
+		32C6F8B8D872E07A485E2722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6F74BC5F65FB06980440E /* LaunchScreen.storyboard */; };
+		32C6F99552E9EFA2AA90D522 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C6F5D8C8DA1E37B627A3DE /* Info.plist */; };
+		32C6FBD37B3801FCB6888550 /* mobile_engage_sample_app_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F60AA7D49CB6A91FF331 /* mobile_engage_sample_app_iosTests.swift */; };
+		32C6FC88AE32C5088C1B9C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F8ADA7EE6439DD067136 /* ViewController.swift */; };
+		32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32C6F84EDCD7E2E295DCD328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C6FF2A8C83EB06A64E12EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32C6F0F9CFB372D81886F59E;
+			remoteInfo = "mobile-engage-sample-app-ios";
+		};
+		32C6F91E7AEB682883B5DB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C6FF2A8C83EB06A64E12EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32C6F0F9CFB372D81886F59E;
+			remoteInfo = "mobile-engage-sample-app-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32C6F07A15DBCD20DDA7D041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32C6F16BF0FE4309A9886C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32C6F5D8C8DA1E37B627A3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		32C6F60AA7D49CB6A91FF331 /* mobile_engage_sample_app_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_engage_sample_app_iosTests.swift; sourceTree = "<group>"; };
+		32C6F740D4C261D2A27B25D7 /* mobile_engage_sample_app_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_engage_sample_app_iosUITests.swift; sourceTree = "<group>"; };
+		32C6F7E1DAB5E9D2551FD693 /* mobile-engage-sample-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-engage-sample-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C6F8A8F77E4E3D40C3C726 /* mobile-engage-sample-app-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-engage-sample-app-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C6F8ADA7EE6439DD067136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32C6FA636DB0FA0F7F6A5CB4 /* mobile-engage-sample-app-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-engage-sample-app-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C6FBD8919E37AF13BF8AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32C6FC10EA592FE7DEECC0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		32C6FD56D4E3A2AB8A0057EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32C6F032A875A9F48F40FE69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C6F69B6D08E1F8D7038150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C6FFC2B6E3A5842728B9A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32C6F1112FEC7FC67C131510 /* mobile-engage-sample-app-ios */ = {
+			isa = PBXGroup;
+			children = (
+				32C6F5D8C8DA1E37B627A3DE /* Info.plist */,
+				32C6F16BF0FE4309A9886C64 /* Assets.xcassets */,
+				32C6F74BC5F65FB06980440E /* LaunchScreen.storyboard */,
+				32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */,
+				32C6FA5B97F3F7E25F3AD0F7 /* Main.storyboard */,
+				32C6F8ADA7EE6439DD067136 /* ViewController.swift */,
+			);
+			path = "mobile-engage-sample-app-ios";
+			sourceTree = "<group>";
+		};
+		32C6F2848F0BF69B79C850BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32C6F7E1DAB5E9D2551FD693 /* mobile-engage-sample-app-ios.app */,
+				32C6F8A8F77E4E3D40C3C726 /* mobile-engage-sample-app-iosTests.xctest */,
+				32C6FA636DB0FA0F7F6A5CB4 /* mobile-engage-sample-app-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C6F2BAC9CEB6C41AADDCBC /* mobile-engage-sample-app-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				32C6FC10EA592FE7DEECC0FE /* Info.plist */,
+				32C6F60AA7D49CB6A91FF331 /* mobile_engage_sample_app_iosTests.swift */,
+			);
+			path = "mobile-engage-sample-app-iosTests";
+			sourceTree = "<group>";
+		};
+		32C6FAA9777AE1DDD9DB45B6 /* mobile-engage-sample-app-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32C6FD56D4E3A2AB8A0057EA /* Info.plist */,
+				32C6F740D4C261D2A27B25D7 /* mobile_engage_sample_app_iosUITests.swift */,
+			);
+			path = "mobile-engage-sample-app-iosUITests";
+			sourceTree = "<group>";
+		};
+		32C6FABE54C9EF70652943B6 = {
+			isa = PBXGroup;
+			children = (
+				32C6F2848F0BF69B79C850BF /* Products */,
+				32C6F1112FEC7FC67C131510 /* mobile-engage-sample-app-ios */,
+				32C6F2BAC9CEB6C41AADDCBC /* mobile-engage-sample-app-iosTests */,
+				32C6FAA9777AE1DDD9DB45B6 /* mobile-engage-sample-app-iosUITests */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32C6F0F9CFB372D81886F59E /* mobile-engage-sample-app-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C6F650CDF7F46157CFD8C4 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-ios" */;
+			buildPhases = (
+				32C6F44E63DD45B2CDA7F57C /* Sources */,
+				32C6F032A875A9F48F40FE69 /* Frameworks */,
+				32C6F25E400BE65D023B4B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mobile-engage-sample-app-ios";
+			productName = "mobile-engage-sample-app-ios";
+			productReference = 32C6F7E1DAB5E9D2551FD693 /* mobile-engage-sample-app-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32C6F498F6A3E99EB5BA1BC2 /* mobile-engage-sample-app-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C6F1324ED2449981DBDE2C /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-iosUITests" */;
+			buildPhases = (
+				32C6F8586433F61602CE5016 /* Sources */,
+				32C6F69B6D08E1F8D7038150 /* Frameworks */,
+				32C6F8858D5023741796B9A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32C6F1DF15F7222AE5A3F4D6 /* PBXTargetDependency */,
+			);
+			name = "mobile-engage-sample-app-iosUITests";
+			productName = "mobile-engage-sample-app-iosUITests";
+			productReference = 32C6FA636DB0FA0F7F6A5CB4 /* mobile-engage-sample-app-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		32C6FB2B0352BB70C6E02846 /* mobile-engage-sample-app-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C6F52928A00F6A035F7B65 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-iosTests" */;
+			buildPhases = (
+				32C6F16DF38C3797BFE2A64F /* Sources */,
+				32C6FFC2B6E3A5842728B9A8 /* Frameworks */,
+				32C6FB6E94744AFF28F49161 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32C6FAB749F6A430835E4381 /* PBXTargetDependency */,
+			);
+			name = "mobile-engage-sample-app-iosTests";
+			productName = "mobile-engage-sample-app-iosTests";
+			productReference = 32C6F8A8F77E4E3D40C3C726 /* mobile-engage-sample-app-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32C6FF2A8C83EB06A64E12EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Emarsys;
+			};
+			buildConfigurationList = 32C6FF8E92762DBFBED2D2AA /* Build configuration list for PBXProject "mobile-engage-sample-app-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 32C6FABE54C9EF70652943B6;
+			productRefGroup = 32C6F2848F0BF69B79C850BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32C6F0F9CFB372D81886F59E /* mobile-engage-sample-app-ios */,
+				32C6FB2B0352BB70C6E02846 /* mobile-engage-sample-app-iosTests */,
+				32C6F498F6A3E99EB5BA1BC2 /* mobile-engage-sample-app-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32C6F25E400BE65D023B4B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C6F99552E9EFA2AA90D522 /* Info.plist in Resources */,
+				32C6F4DDF467DDF64D7A451B /* Assets.xcassets in Resources */,
+				32C6F8B8D872E07A485E2722 /* LaunchScreen.storyboard in Resources */,
+				32C6F5D1EFAA9AF8D494D386 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C6F8858D5023741796B9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C6F56B575315F60F529D9A /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C6FB6E94744AFF28F49161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C6F248024B5E239DD442F8 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32C6F16DF38C3797BFE2A64F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C6FBD37B3801FCB6888550 /* mobile_engage_sample_app_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C6F44E63DD45B2CDA7F57C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */,
+				32C6FC88AE32C5088C1B9C2F /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C6F8586433F61602CE5016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C6F0502D12ECF7E54E733E /* mobile_engage_sample_app_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32C6F1DF15F7222AE5A3F4D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32C6F0F9CFB372D81886F59E /* mobile-engage-sample-app-ios */;
+			targetProxy = 32C6F84EDCD7E2E295DCD328 /* PBXContainerItemProxy */;
+		};
+		32C6FAB749F6A430835E4381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32C6F0F9CFB372D81886F59E /* mobile-engage-sample-app-ios */;
+			targetProxy = 32C6F91E7AEB682883B5DB87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32C6F74BC5F65FB06980440E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32C6F07A15DBCD20DDA7D041 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		32C6FA5B97F3F7E25F3AD0F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32C6FBD8919E37AF13BF8AF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32C6F0AA3E280A91ECC7E24B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32C6F192D80BDC3BFBFA9A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32C6F27509ECD37143223EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mobile-engage-sample-app-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		32C6F2AB2F73BDF49C76267A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mobile-engage-sample-app-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		32C6F34C50D69E475673FF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "mobile-engage-sample-app-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "mobile-engage-sample-app-ios";
+			};
+			name = Debug;
+		};
+		32C6F471FFC4629DB7DF18F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "mobile-engage-sample-app-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "mobile-engage-sample-app-ios";
+			};
+			name = Release;
+		};
+		32C6F6EC8CCAB70BD609BE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mobile-engage-sample-app-ios.app/mobile-engage-sample-app-ios";
+				INFOPLIST_FILE = "mobile-engage-sample-app-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		32C6FF1FC40CCC63558FB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mobile-engage-sample-app-ios.app/mobile-engage-sample-app-ios";
+				INFOPLIST_FILE = "mobile-engage-sample-app-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32C6F1324ED2449981DBDE2C /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C6F34C50D69E475673FF7C /* Debug */,
+				32C6F471FFC4629DB7DF18F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32C6F52928A00F6A035F7B65 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C6FF1FC40CCC63558FB1B8 /* Debug */,
+				32C6F6EC8CCAB70BD609BE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32C6F650CDF7F46157CFD8C4 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C6F27509ECD37143223EE5 /* Debug */,
+				32C6F2AB2F73BDF49C76267A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32C6FF8E92762DBFBED2D2AA /* Build configuration list for PBXProject "mobile-engage-sample-app-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C6F192D80BDC3BFBFA9A43 /* Debug */,
+				32C6F0AA3E280A91ECC7E24B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32C6FF2A8C83EB06A64E12EF /* Project object */;
+}
