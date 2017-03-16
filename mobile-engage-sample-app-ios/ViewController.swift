@@ -31,23 +31,39 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
            let valueText = self.contactFieldValueTextField.text,
            let id = Int(idText) {
             MobileEngage.appLogin(withContactFieldId: id as NSNumber, contactFieldValue: valueText)
-        } else {
-            MobileEngage.appLogin(withContactFieldId: nil, contactFieldValue: nil)
         }
     }
 
     @IBAction func trackMessageButtonClicked(_ sender: Any) {
         guard let sidText = sidTextField.text,
               let sid = Int(sidText) else {
+            showAlert(with: "Missing sid")
             return
         }
         MobileEngage.trackMessageOpen(userInfo: ["u": "{\"sid\":\"\(sid)\"}"])
     }
 
     @IBAction func trackCustomEventButtonClicked(_ sender: Any) {
+        guard let eventName = self.customEventNameTextField.text, !eventName.isEmpty else {
+            showAlert(with: "Missing eventName")
+            return
+        }
+        var eventAttributes: [String: String]?
+        if let attributes = self.customEventAttributesTextView.text {
+            if let data = attributes.data(using: .utf8) {
+                do {
+                    eventAttributes = try JSONSerialization.jsonObject(with: data, options: []) as? [String: String]
+                } catch {
+                    showAlert(with: "Invalid JSON")
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        MobileEngage.trackCustomEvent(eventName, eventAttributes: eventAttributes)
     }
 
     @IBAction func logoutButtonClicked(_ sender: Any) {
+        MobileEngage.appLogout()
     }
 
     func backgroundTapped() {
@@ -56,11 +72,20 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
 
 //MARK: MobileEngageStatusDelegate
     func mobileEngageLogReceived(withEventId eventId: String, log: String) {
+        showAlert(with: "EventId: \(eventId) \n Log: \(log)")
         print(eventId, log)
     }
 
     func mobileEngageErrorHappened(withEventId eventId: String, error: Error) {
+        showAlert(with: "EventId: \(eventId) \n Error: \(error)")
         print(eventId, error)
+    }
+
+//MARK: Private methods
+    fileprivate func showAlert(with message: String) {
+        let controller = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: "OK", style: .cancel))
+        present(controller, animated: true)
     }
 
 }

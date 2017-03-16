@@ -78,7 +78,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL6-Fn-TfC">
                                                 <rect key="frame" x="120" y="0.0" width="134" height="30"/>
@@ -101,7 +101,7 @@
                                         <color key="backgroundColor" white="0.92444196430000003" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="{&quot;eventAttributesKey1&quot;: &quot;value&quot;, &quot;eventAttributesKey2&quot;: &quot;value&quot;}" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xvA-E6-hdY">
                                         <rect key="frame" x="0.0" y="316" width="288" height="100"/>
