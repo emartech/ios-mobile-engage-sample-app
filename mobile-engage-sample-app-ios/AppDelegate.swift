@@ -1,24 +1,20 @@
 //
-//  AppDelegate.swift
-//  mobile-engage-sample-app-ios
-//
-//  Created by Laszlo Ori on 2017. 03. 14..
 //  Copyright (c) 2017 Emarsys. All rights reserved.
 //
 
 import UIKit
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    return true
+        let config = MEConfig.make { builder in
+            builder.setCredentialsWithApplicationId("14C19-A121F", applicationSecret: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
+        }
+        MobileEngage.setup(with: config, launchOptions: launchOptions)
+        return true
     }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D16801F0B3C42B47535A921 /* libPods-mobile-engage-sample-app-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 115B2AC39916BDC4620A89F8 /* libPods-mobile-engage-sample-app-ios.a */; };
 		32C6F0502D12ECF7E54E733E /* mobile_engage_sample_app_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F740D4C261D2A27B25D7 /* mobile_engage_sample_app_iosUITests.swift */; };
 		32C6F248024B5E239DD442F8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C6FC10EA592FE7DEECC0FE /* Info.plist */; };
 		32C6F4DDF467DDF64D7A451B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C6F16BF0FE4309A9886C64 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		32C6FBD37B3801FCB6888550 /* mobile_engage_sample_app_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F60AA7D49CB6A91FF331 /* mobile_engage_sample_app_iosTests.swift */; };
 		32C6FC88AE32C5088C1B9C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F8ADA7EE6439DD067136 /* ViewController.swift */; };
 		32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */; };
+		9A7BDCACB1931A8BE20F3AFB /* libPods-mobile-engage-sample-app-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 407C95F8EBDD20D6099AA779 /* libPods-mobile-engage-sample-app-iosTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115B2AC39916BDC4620A89F8 /* libPods-mobile-engage-sample-app-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile-engage-sample-app-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C20763A673A6A749DA47D6A /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32C6F07A15DBCD20DDA7D041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C6F16BF0FE4309A9886C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,10 +50,15 @@
 		32C6F7E1DAB5E9D2551FD693 /* mobile-engage-sample-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-engage-sample-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6F8A8F77E4E3D40C3C726 /* mobile-engage-sample-app-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-engage-sample-app-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6F8ADA7EE6439DD067136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32C6FA62A0FE28B499F7EFEE /* mobile-engage-sample-app-ios-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mobile-engage-sample-app-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		32C6FA636DB0FA0F7F6A5CB4 /* mobile-engage-sample-app-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-engage-sample-app-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6FBD8919E37AF13BF8AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32C6FC10EA592FE7DEECC0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		32C6FD56D4E3A2AB8A0057EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		407C95F8EBDD20D6099AA779 /* libPods-mobile-engage-sample-app-iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile-engage-sample-app-iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4698E4F80CAC74D02AC22ABF /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		544A6C24DC4B7A15C3D95FD0 /* Pods-mobile-engage-sample-app-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios.release.xcconfig"; sourceTree = "<group>"; };
+		5A5F4BC4FB46A6FFAC90BDBF /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D16801F0B3C42B47535A921 /* libPods-mobile-engage-sample-app-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +81,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7BDCACB1931A8BE20F3AFB /* libPods-mobile-engage-sample-app-iosTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16232ADD8E5A572A1B4BA7CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				115B2AC39916BDC4620A89F8 /* libPods-mobile-engage-sample-app-ios.a */,
+				407C95F8EBDD20D6099AA779 /* libPods-mobile-engage-sample-app-iosTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		32C6F1112FEC7FC67C131510 /* mobile-engage-sample-app-ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +106,7 @@
 				32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */,
 				32C6FA5B97F3F7E25F3AD0F7 /* Main.storyboard */,
 				32C6F8ADA7EE6439DD067136 /* ViewController.swift */,
+				32C6FA62A0FE28B499F7EFEE /* mobile-engage-sample-app-ios-Bridging-Header.h */,
 			);
 			path = "mobile-engage-sample-app-ios";
 			sourceTree = "<group>";
@@ -125,7 +146,20 @@
 				32C6F1112FEC7FC67C131510 /* mobile-engage-sample-app-ios */,
 				32C6F2BAC9CEB6C41AADDCBC /* mobile-engage-sample-app-iosTests */,
 				32C6FAA9777AE1DDD9DB45B6 /* mobile-engage-sample-app-iosUITests */,
+				8246AD473E30810E6FEE215B /* Pods */,
+				16232ADD8E5A572A1B4BA7CF /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		8246AD473E30810E6FEE215B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4698E4F80CAC74D02AC22ABF /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */,
+				544A6C24DC4B7A15C3D95FD0 /* Pods-mobile-engage-sample-app-ios.release.xcconfig */,
+				2C20763A673A6A749DA47D6A /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */,
+				5A5F4BC4FB46A6FFAC90BDBF /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C6F650CDF7F46157CFD8C4 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-ios" */;
 			buildPhases = (
+				03B3D233F0730AC7EF375B05 /* [CP] Check Pods Manifest.lock */,
 				32C6F44E63DD45B2CDA7F57C /* Sources */,
 				32C6F032A875A9F48F40FE69 /* Frameworks */,
 				32C6F25E400BE65D023B4B7B /* Resources */,
+				8A8DD5648844A25E0BDBD781 /* [CP] Embed Pods Frameworks */,
+				3E8BEF36107C07DD99857843 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C6F52928A00F6A035F7B65 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-iosTests" */;
 			buildPhases = (
+				F47CFEB30D9DEB62221AD43E /* [CP] Check Pods Manifest.lock */,
 				32C6F16DF38C3797BFE2A64F /* Sources */,
 				32C6FFC2B6E3A5842728B9A8 /* Frameworks */,
 				32C6FB6E94744AFF28F49161 /* Resources */,
+				3E1A9B4A70FA82573FCB543B /* [CP] Embed Pods Frameworks */,
+				A806280EFBC94D9B2135CA79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +280,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03B3D233F0730AC7EF375B05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E1A9B4A70FA82573FCB543B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E8BEF36107C07DD99857843 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A8DD5648844A25E0BDBD781 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A806280EFBC94D9B2135CA79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F47CFEB30D9DEB62221AD43E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32C6F16DF38C3797BFE2A64F /* Sources */ = {
@@ -397,24 +530,28 @@
 		};
 		32C6F27509ECD37143223EE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4698E4F80CAC74D02AC22ABF /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mobile-engage-sample-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mobile-engage-sample-app-ios/mobile-engage-sample-app-ios-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		32C6F2AB2F73BDF49C76267A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544A6C24DC4B7A15C3D95FD0 /* Pods-mobile-engage-sample-app-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mobile-engage-sample-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mobile-engage-sample-app-ios/mobile-engage-sample-app-ios-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -445,6 +582,7 @@
 		};
 		32C6F6EC8CCAB70BD609BE33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A5F4BC4FB46A6FFAC90BDBF /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mobile-engage-sample-app-ios.app/mobile-engage-sample-app-ios";
 				INFOPLIST_FILE = "mobile-engage-sample-app-iosTests/Info.plist";
@@ -458,6 +596,7 @@
 		};
 		32C6FF1FC40CCC63558FB1B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C20763A673A6A749DA47D6A /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mobile-engage-sample-app-ios.app/mobile-engage-sample-app-ios";
 				INFOPLIST_FILE = "mobile-engage-sample-app-iosTests/Info.plist";
@@ -479,6 +618,7 @@
 				32C6F471FFC4629DB7DF18F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32C6F52928A00F6A035F7B65 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +627,7 @@
 				32C6F6EC8CCAB70BD609BE33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32C6F650CDF7F46157CFD8C4 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-ios" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +636,7 @@
 				32C6F2AB2F73BDF49C76267A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32C6FF8E92762DBFBED2D2AA /* Build configuration list for PBXProject "mobile-engage-sample-app-ios" */ = {
 			isa = XCConfigurationList;
