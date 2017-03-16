@@ -231,6 +231,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = Emarsys;
+				TargetAttributes = {
+					32C6F0F9CFB372D81886F59E = {
+						DevelopmentTeam = 8LAPGQR7L8;
+					};
+				};
 			};
 			buildConfigurationList = 32C6FF8E92762DBFBED2D2AA /* Build configuration list for PBXProject "mobile-engage-sample-app-ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -533,6 +538,7 @@
 			baseConfigurationReference = 4698E4F80CAC74D02AC22ABF /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8LAPGQR7L8;
 				INFOPLIST_FILE = "mobile-engage-sample-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-ios";
@@ -547,6 +553,7 @@
 			baseConfigurationReference = 544A6C24DC4B7A15C3D95FD0 /* Pods-mobile-engage-sample-app-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8LAPGQR7L8;
 				INFOPLIST_FILE = "mobile-engage-sample-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-ios";

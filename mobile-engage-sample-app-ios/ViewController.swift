@@ -27,11 +27,13 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
     }
 
     @IBAction func loginButtonClicked(_ sender: Any) {
-        if let idText = self.contactFieldIdTextField.text,
-           let valueText = self.contactFieldValueTextField.text,
-           let id = Int(idText) {
-            MobileEngage.appLogin(withContactFieldId: id as NSNumber, contactFieldValue: valueText)
+        guard let idText = self.contactFieldIdTextField.text,
+              let valueText = self.contactFieldValueTextField.text,
+              let id = Int(idText) else {
+            showAlert(with: "Wrong parameter")
+            return
         }
+        MobileEngage.appLogin(withContactFieldId: id as NSNumber, contactFieldValue: valueText)
     }
 
     @IBAction func trackMessageButtonClicked(_ sender: Any) {

@@ -9,7 +9,9 @@
 import XCTest
 
 class mobile_engage_sample_app_iosUITests: XCTestCase {
-        
+    
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
@@ -28,9 +30,16 @@ class mobile_engage_sample_app_iosUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAnonymAppLogin() {
+        let okButton = app.alerts.buttons["OK"]
+        
+        let predicate = NSPredicate(format: "exists == true")
+        expectation(for: predicate, evaluatedWith: okButton, handler: nil)
+        
+        app.buttons["anonymousLogin"].tap()
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssert(okButton.exists)
     }
     
 }
