@@ -12,6 +12,7 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
     @IBOutlet weak var sidTextField: UITextField!
     @IBOutlet weak var customEventNameTextField: UITextField!
     @IBOutlet weak var customEventAttributesTextView: UITextView!
+    @IBOutlet weak var scrollView: UIScrollView!
 
 //MARK: ViewController
     override func viewDidLoad() {
@@ -89,5 +90,39 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
         controller.addAction(UIAlertAction(title: "OK", style: .cancel))
         present(controller, animated: true)
     }
+
+    fileprivate func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWasShown),
+            name: Notification.Name.UIKeyboardDidShow, object: nil)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillBeHidden),
+            name: Notification.Name.UIKeyboardWillHide, object: nil)
+
+    }
+//    NSDictionary* info = [aNotification userInfo];
+//    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+//    
+//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+//    scrollView.contentInset = contentInsets;
+//    scrollView.scrollIndicatorInsets = contentInsets;
+//    
+//    // If active text field is hidden by keyboard, scroll it so it's visible
+//    // Your app might not need or want this behavior.
+//    CGRect aRect = self.view.frame;
+//    aRect.size.height -= kbSize.height;
+//    if (!CGRectContainsPoint(aRect, activeField.frame.origin) ) {
+//    [self.scrollView scrollRectToVisible:activeField.frame animated:YES];
+//    }
+    func keyboardWasShown(notification: Notification) {
+
+    }
+
+//    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+//    scrollView.contentInset = contentInsets;
+//    scrollView.scrollIndicatorInsets = contentInsets;
+    func keyboardWillBeHidden(notification: Notification) {
+
+    }
+ 
 
 }
