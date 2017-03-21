@@ -85,7 +85,7 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
 
 //MARK: Private methods
     fileprivate func showAlert(with message: String) {
-        let controller = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let controller = UIAlertController(title: message, message: nil, preferredStyle: .alert)
         controller.addAction(UIAlertAction(title: "OK", style: .cancel))
         present(controller, animated: true)
     }
