@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1608A3BC1E8289110016C574 /* ViewControllerKeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */; };
 		1D16801F0B3C42B47535A921 /* libPods-mobile-engage-sample-app-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 115B2AC39916BDC4620A89F8 /* libPods-mobile-engage-sample-app-ios.a */; };
 		32C6F0502D12ECF7E54E733E /* MobileEngageSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F740D4C261D2A27B25D7 /* MobileEngageSampleAppUITests.swift */; };
 		32C6F4DDF467DDF64D7A451B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C6F16BF0FE4309A9886C64 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		115B2AC39916BDC4620A89F8 /* libPods-mobile-engage-sample-app-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile-engage-sample-app-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerKeyboardHandling.swift; sourceTree = "<group>"; };
 		2C20763A673A6A749DA47D6A /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32C6F07A15DBCD20DDA7D041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C6F16BF0FE4309A9886C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */,
 				32C6FA5B97F3F7E25F3AD0F7 /* Main.storyboard */,
 				32C6F8ADA7EE6439DD067136 /* ViewController.swift */,
+				1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */,
 				32C6FA62A0FE28B499F7EFEE /* mobile-engage-sample-app-ios-Bridging-Header.h */,
 			);
 			path = "mobile-engage-sample-app-ios";
@@ -390,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1608A3BC1E8289110016C574 /* ViewControllerKeyboardHandling.swift in Sources */,
 				32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */,
 				32C6FC88AE32C5088C1B9C2F /* ViewController.swift in Sources */,
 			);

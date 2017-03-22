@@ -39,7 +39,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
         let sidTextField = app.textFields["sid"]
 
         sidTextField.tap()
-        sidTextField.typeText("123456") //TODO: use valid sid
+        sidTextField.typeText("dd8_zXfDdndBNEQi")
 
         eventuallyAssertSuccess {
             app.buttons["trackMessageOpen"].tap()

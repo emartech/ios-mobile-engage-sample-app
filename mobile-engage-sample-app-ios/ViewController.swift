@@ -13,13 +13,16 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
     @IBOutlet weak var customEventNameTextField: UITextField!
     @IBOutlet weak var customEventAttributesTextView: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
-
+    @IBOutlet weak var scrollViewBottomConstraint: NSLayoutConstraint!
+    
 //MARK: ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(backgroundTapped))
         self.view.addGestureRecognizer(tapGestureRecognizer)
-        MobileEngage.statusDelegate = self;
+        MobileEngage.statusDelegate = self
+
+        registerForKeyboardNotifications()
     }
 
 //MARK: Actions
@@ -38,8 +41,7 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
     }
 
     @IBAction func trackMessageButtonClicked(_ sender: Any) {
-        guard let sidText = sidTextField.text,
-              let sid = Int(sidText) else {
+        guard let sid = sidTextField.text else {
             showAlert(with: "Missing sid")
             return
         }
@@ -83,46 +85,5 @@ class ViewController: UIViewController, MobileEngageStatusDelegate {
         showAlert(with: "EventId: \(eventId) \n Error: \(error)")
         print(eventId, error)
     }
-
-//MARK: Private methods
-    fileprivate func showAlert(with message: String) {
-        let controller = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-        controller.addAction(UIAlertAction(title: "OK", style: .cancel))
-        present(controller, animated: true)
-    }
-
-    fileprivate func registerForKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWasShown),
-            name: Notification.Name.UIKeyboardDidShow, object: nil)
-
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillBeHidden),
-            name: Notification.Name.UIKeyboardWillHide, object: nil)
-
-    }
-//    NSDictionary* info = [aNotification userInfo];
-//    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-//    
-//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
-//    scrollView.contentInset = contentInsets;
-//    scrollView.scrollIndicatorInsets = contentInsets;
-//    
-//    // If active text field is hidden by keyboard, scroll it so it's visible
-//    // Your app might not need or want this behavior.
-//    CGRect aRect = self.view.frame;
-//    aRect.size.height -= kbSize.height;
-//    if (!CGRectContainsPoint(aRect, activeField.frame.origin) ) {
-//    [self.scrollView scrollRectToVisible:activeField.frame animated:YES];
-//    }
-    func keyboardWasShown(notification: Notification) {
-
-    }
-
-//    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
-//    scrollView.contentInset = contentInsets;
-//    scrollView.scrollIndicatorInsets = contentInsets;
-    func keyboardWillBeHidden(notification: Notification) {
-
-    }
- 
 
 }
