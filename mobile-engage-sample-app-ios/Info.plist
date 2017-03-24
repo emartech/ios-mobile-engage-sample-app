@@ -45,6 +45,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Pushwoosh_APPID</key>
+	<string>14C19-A121F</string>
     <key>CFBundleURLTypes</key>
     <array>
         <dict>
@@ -54,7 +56,7 @@
             <string>com.pushwoosh.scheme</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>pw-YOUR_PUSHWOOSH_APP_ID</string>
+                <string>pw-14C19-A121F</string>
             </array>
         </dict>
     </array>
