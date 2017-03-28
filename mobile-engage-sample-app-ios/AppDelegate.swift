@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        MobileEngage.setPushToken(deviceToken)
         PushNotificationManager.push().handlePushRegistration(deviceToken as Data!)
     }
 
