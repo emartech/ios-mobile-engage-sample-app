@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         PushNotificationManager.push().registerForPushNotifications()
         
         let config = MEConfig.make { builder in
-            builder.setCredentialsWithApplicationId("14C19-A121F", applicationSecret: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
+            builder.setCredentialsWithApplicationCode("14C19-A121F", applicationPassword: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
         }
         MobileEngage.setup(with: config, launchOptions: launchOptions)
         return true
