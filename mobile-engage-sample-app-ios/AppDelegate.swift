@@ -3,45 +3,41 @@
 //
 
 import UIKit
-import Pushwoosh
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        PushNotificationManager.push().delegate = self
-        if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().delegate = PushNotificationManager.push().notificationCenterDelegate
-        }
-        PushNotificationManager.push().handlePushReceived(launchOptions)
-        PushNotificationManager.push().sendAppOpen()
-        PushNotificationManager.push().registerForPushNotifications()
-        
+
         let config = MEConfig.make { builder in
             builder.setCredentialsWithApplicationCode("14C19-A121F", applicationPassword: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
         }
         MobileEngage.setup(with: config, launchOptions: launchOptions)
+        
+        application.registerForRemoteNotifications()
+        
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+                print(granted, error ?? "no error")
+            }
+        } else {
+            application.registerUserNotificationSettings(UIUserNotificationSettings.init(types: [.alert, .badge, .sound], categories: nil))
+        }
+        
         return true
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         MobileEngage.setPushToken(deviceToken)
-        PushNotificationManager.push().handlePushRegistration(deviceToken as Data!)
     }
 
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        PushNotificationManager.push().handlePushRegistrationFailure(error)
-    }
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {}
 
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-        PushNotificationManager.push().handlePushReceived(userInfo)
-    }
-
-//MARK: PushNotificationDelegate
-    func onPushAccepted(_ pushManager: PushNotificationManager!, withNotification pushNotification: [AnyHashable: Any]!, onStart: Bool) {
-        MobileEngage.trackMessageOpen(userInfo: pushNotification)
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        MobileEngage.trackMessageOpen(userInfo: userInfo)
     }
 
 }

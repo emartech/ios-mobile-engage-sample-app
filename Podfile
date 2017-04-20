@@ -5,7 +5,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target "mobile-engage-sample-app-ios" do
   pod 'MobileEngageSDK'
-  pod 'Pushwoosh'
 end
 
 target "mobile-engage-sample-app-iosTests" do
