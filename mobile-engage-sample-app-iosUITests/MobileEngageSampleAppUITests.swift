@@ -22,13 +22,13 @@ class MobileEngageSampleAppUITests: XCTestCase {
 
     func testLogin() {
         let contactFieldIdTextField = app.textFields["contactFieldId"]
-        let contactFieldValueSecureTextField = app.secureTextFields["contactFieldValue"]
+        let contactFieldValueTextField = app.textFields["contactFieldValue"]
 
         contactFieldIdTextField.tap()
         contactFieldIdTextField.typeText("123456789")
 
-        contactFieldValueSecureTextField.tap()
-        contactFieldValueSecureTextField.typeText("contactFieldValue")
+        contactFieldValueTextField.tap()
+        contactFieldValueTextField.typeText("contactFieldValue")
 
         eventuallyAssertSuccess {
             app.buttons["login"].tap()
