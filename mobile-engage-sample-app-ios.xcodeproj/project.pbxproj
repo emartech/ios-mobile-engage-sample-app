@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1608A3BC1E8289110016C574 /* ViewControllerKeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */; };
+		16629EF41EF3FA3400FE221E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16629EF31EF3FA3400FE221E /* libsqlite3.tbd */; };
 		16E056AC1EA8A76500DAE104 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E056A91EA8A76500DAE104 /* UserNotifications.framework */; };
 		1D16801F0B3C42B47535A921 /* libPods-mobile-engage-sample-app-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 115B2AC39916BDC4620A89F8 /* libPods-mobile-engage-sample-app-ios.a */; };
 		32C6F0502D12ECF7E54E733E /* MobileEngageSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F740D4C261D2A27B25D7 /* MobileEngageSampleAppUITests.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		115B2AC39916BDC4620A89F8 /* libPods-mobile-engage-sample-app-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile-engage-sample-app-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerKeyboardHandling.swift; sourceTree = "<group>"; };
+		16629EF31EF3FA3400FE221E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		16E056A91EA8A76500DAE104 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2C20763A673A6A749DA47D6A /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32C6F07A15DBCD20DDA7D041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16629EF41EF3FA3400FE221E /* libsqlite3.tbd in Frameworks */,
 				16E056AC1EA8A76500DAE104 /* UserNotifications.framework in Frameworks */,
 				8AB649801E83FDDB00C8E6D7 /* libstdc++.tbd in Frameworks */,
 				8AB649811E83FDDB00C8E6D7 /* libz.tbd in Frameworks */,
@@ -100,6 +103,7 @@
 		16232ADD8E5A572A1B4BA7CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16629EF31EF3FA3400FE221E /* libsqlite3.tbd */,
 				16E056A91EA8A76500DAE104 /* UserNotifications.framework */,
 				8AB6497E1E83FDDB00C8E6D7 /* libstdc++.tbd */,
 				8AB6497F1E83FDDB00C8E6D7 /* libz.tbd */,
@@ -323,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3E1A9B4A70FA82573FCB543B /* [CP] Embed Pods Frameworks */ = {
@@ -398,7 +402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
