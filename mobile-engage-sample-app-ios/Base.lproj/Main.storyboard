@@ -1,17 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aDg-AU-mwu">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Inbox-->
+        <scene sceneID="J7H-W1-bLl">
+            <objects>
+                <viewController id="KQA-zT-TXc" customClass="MESInboxViewController" customModule="mobile_engage_sample_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kyy-gx-UV6"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpH-de-pi6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SMp-8s-DFm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-eT-L3u">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="notificationCell" id="y4W-nc-Nyx">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y4W-nc-Nyx" id="iSG-Ml-xkZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KQA-zT-TXc" id="OQw-gD-Cpg"/>
+                                    <outlet property="delegate" destination="KQA-zT-TXc" id="7kl-h7-dwJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JBX-eT-L3u" secondAttribute="trailing" id="8Wd-3f-b35"/>
+                            <constraint firstItem="JBX-eT-L3u" firstAttribute="top" secondItem="SMp-8s-DFm" secondAttribute="top" id="N2F-Bm-UU6"/>
+                            <constraint firstItem="hpH-de-pi6" firstAttribute="top" secondItem="JBX-eT-L3u" secondAttribute="bottom" id="bbA-gM-I7I"/>
+                            <constraint firstItem="JBX-eT-L3u" firstAttribute="leading" secondItem="SMp-8s-DFm" secondAttribute="leading" id="vSj-NX-0SL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inbox" id="Nkq-fh-cAq"/>
+                    <connections>
+                        <outlet property="notificationTableView" destination="JBX-eT-L3u" id="OZV-Hg-eB9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xql-19-3Ni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418.125" y="509.15492957746477"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IrL-jo-wOB">
+            <objects>
+                <tabBarController id="aDg-AU-mwu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="EVU-8f-dk0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c9r-BB-qGf"/>
+                        <segue destination="KQA-zT-TXc" kind="relationship" relationship="viewControllers" id="gFY-nK-Car"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSf-av-06R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1429" y="90"/>
+        </scene>
+        <!--MobileEngage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mobile_engage_sample_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MESMobileEngageViewController" customModule="mobile_engage_sample_app_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -180,6 +246,7 @@
                             <constraint firstAttribute="bottom" secondItem="QdQ-QX-NkU" secondAttribute="bottom" id="stN-ZH-d8b"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="MobileEngage" id="lrg-hz-h7I"/>
                     <connections>
                         <outlet property="contactFieldIdTextField" destination="3fK-2l-cbw" id="I5E-Ao-PY1"/>
                         <outlet property="contactFieldValueTextField" destination="XAT-sM-LtP" id="Isb-vF-L4V"/>
@@ -192,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-418" y="-297"/>
         </scene>
     </scenes>
 </document>

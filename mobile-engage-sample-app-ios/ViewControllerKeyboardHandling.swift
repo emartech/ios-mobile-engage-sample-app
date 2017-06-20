@@ -5,7 +5,7 @@
 import Foundation
 import UIKit
 
-extension ViewController {
+extension MESMobileEngageViewController {
     
     func showAlert(with message: String) {
         let controller = UIAlertController(title: message, message: nil, preferredStyle: .alert)
@@ -14,10 +14,10 @@ extension ViewController {
     }
     
     func registerForKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWasShown),
+        NotificationCenter.default.addObserver(self, selector: #selector(MESMobileEngageViewController.keyboardWasShown),
                                                name: Notification.Name.UIKeyboardDidShow, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillBeHidden),
+        NotificationCenter.default.addObserver(self, selector: #selector(MESMobileEngageViewController.keyboardWillBeHidden),
                                                name: Notification.Name.UIKeyboardWillHide, object: nil)
         
     }

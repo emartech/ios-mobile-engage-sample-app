@@ -4,7 +4,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, MobileEngageStatusDelegate {
+class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegate {
 
 //MARK: Outlets
     @IBOutlet weak var contactFieldIdTextField: UITextField!

@@ -16,10 +16,11 @@
 		32C6F5D1EFAA9AF8D494D386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6FA5B97F3F7E25F3AD0F7 /* Main.storyboard */; };
 		32C6F8B8D872E07A485E2722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6F74BC5F65FB06980440E /* LaunchScreen.storyboard */; };
 		32C6FBD37B3801FCB6888550 /* mobile_engage_sample_app_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F60AA7D49CB6A91FF331 /* mobile_engage_sample_app_iosTests.swift */; };
-		32C6FC88AE32C5088C1B9C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F8ADA7EE6439DD067136 /* ViewController.swift */; };
+		32C6FC88AE32C5088C1B9C2F /* MESMobileEngageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F8ADA7EE6439DD067136 /* MESMobileEngageViewController.swift */; };
 		32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */; };
 		8AB649801E83FDDB00C8E6D7 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB6497E1E83FDDB00C8E6D7 /* libstdc++.tbd */; };
 		8AB649811E83FDDB00C8E6D7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB6497F1E83FDDB00C8E6D7 /* libz.tbd */; };
+		8AE13C171EF94F15005B5267 /* MESInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */; };
 		9A7BDCACB1931A8BE20F3AFB /* libPods-mobile-engage-sample-app-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 407C95F8EBDD20D6099AA779 /* libPods-mobile-engage-sample-app-iosTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +55,7 @@
 		32C6F740D4C261D2A27B25D7 /* MobileEngageSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileEngageSampleAppUITests.swift; sourceTree = "<group>"; };
 		32C6F7E1DAB5E9D2551FD693 /* mobile-engage-sample-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-engage-sample-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6F8A8F77E4E3D40C3C726 /* mobile-engage-sample-app-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-engage-sample-app-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32C6F8ADA7EE6439DD067136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32C6F8ADA7EE6439DD067136 /* MESMobileEngageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MESMobileEngageViewController.swift; sourceTree = "<group>"; };
 		32C6FA62A0FE28B499F7EFEE /* mobile-engage-sample-app-ios-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mobile-engage-sample-app-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		32C6FA636DB0FA0F7F6A5CB4 /* mobile-engage-sample-app-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-engage-sample-app-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6FBD8919E37AF13BF8AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		8AB6497E1E83FDDB00C8E6D7 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		8AB6497F1E83FDDB00C8E6D7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8AB649821E84004F00C8E6D7 /* mobile-engage-sample-app-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mobile-engage-sample-app-ios.entitlements"; sourceTree = "<group>"; };
+		8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MESInboxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +124,10 @@
 				32C6F74BC5F65FB06980440E /* LaunchScreen.storyboard */,
 				32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */,
 				32C6FA5B97F3F7E25F3AD0F7 /* Main.storyboard */,
-				32C6F8ADA7EE6439DD067136 /* ViewController.swift */,
+				32C6F8ADA7EE6439DD067136 /* MESMobileEngageViewController.swift */,
 				1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */,
 				32C6FA62A0FE28B499F7EFEE /* mobile-engage-sample-app-ios-Bridging-Header.h */,
+				8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */,
 			);
 			path = "mobile-engage-sample-app-ios";
 			sourceTree = "<group>";
@@ -256,7 +259,7 @@
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.Push = {
 								enabled = 1;
@@ -327,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3E1A9B4A70FA82573FCB543B /* [CP] Embed Pods Frameworks */ = {
@@ -402,7 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,7 +425,8 @@
 			files = (
 				1608A3BC1E8289110016C574 /* ViewControllerKeyboardHandling.swift in Sources */,
 				32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */,
-				32C6FC88AE32C5088C1B9C2F /* ViewController.swift in Sources */,
+				32C6FC88AE32C5088C1B9C2F /* MESMobileEngageViewController.swift in Sources */,
+				8AE13C171EF94F15005B5267 /* MESInboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
