@@ -38,6 +38,9 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
             return
         }
         MobileEngage.appLogin(withContactFieldId: id as NSNumber, contactFieldValue: valueText)
+
+        let inboxViewController = self.tabBarController?.viewControllers?[1] as! MESInboxViewController
+        inboxViewController.refresh(refreshControl: nil)
     }
 
     @IBAction func trackMessageButtonClicked(_ sender: Any) {
