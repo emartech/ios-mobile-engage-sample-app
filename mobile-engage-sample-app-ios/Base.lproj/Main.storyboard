@@ -246,7 +246,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="YL0-49-yEA" secondAttribute="trailing" id="1gh-Rp-SOY"/>
-                                    <constraint firstItem="YL0-49-yEA" firstAttribute="height" secondItem="QdQ-QX-NkU" secondAttribute="height" id="38E-Iz-kKZ"/>
+                                    <constraint firstItem="YL0-49-yEA" firstAttribute="height" secondItem="QdQ-QX-NkU" secondAttribute="height" placeholder="YES" id="38E-Iz-kKZ"/>
                                     <constraint firstItem="YL0-49-yEA" firstAttribute="top" secondItem="QdQ-QX-NkU" secondAttribute="top" id="9b9-bf-Bhu"/>
                                     <constraint firstItem="YL0-49-yEA" firstAttribute="width" secondItem="QdQ-QX-NkU" secondAttribute="width" id="VNb-05-YnJ"/>
                                     <constraint firstAttribute="bottom" secondItem="YL0-49-yEA" secondAttribute="bottom" id="mPc-Cm-ZgW"/>
@@ -257,8 +257,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QdQ-QX-NkU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ATA-jO-NcL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QdQ-QX-NkU" secondAttribute="bottom" id="Nrw-s9-Y4b"/>
                             <constraint firstAttribute="trailing" secondItem="QdQ-QX-NkU" secondAttribute="trailing" id="SkB-I5-6u6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QdQ-QX-NkU" secondAttribute="bottom" id="oCh-MV-GcB"/>
                             <constraint firstItem="QdQ-QX-NkU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pFw-2p-8qI"/>
                         </constraints>
                     </view>
@@ -269,7 +269,7 @@
                         <outlet property="customEventAttributesTextView" destination="xvA-E6-hdY" id="w56-77-dYG"/>
                         <outlet property="customEventNameTextField" destination="stu-X8-Dyp" id="HfU-hg-KKM"/>
                         <outlet property="scrollView" destination="QdQ-QX-NkU" id="bH6-pF-SaV"/>
-                        <outlet property="scrollViewBottomConstraint" destination="oCh-MV-GcB" id="iyj-3S-nFy"/>
+                        <outlet property="scrollViewBottomConstraint" destination="Nrw-s9-Y4b" id="k4q-rJ-s1l"/>
                         <outlet property="sidTextField" destination="vZf-1Q-mna" id="rTk-9h-h8F"/>
                     </connections>
                 </viewController>
