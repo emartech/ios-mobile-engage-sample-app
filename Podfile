@@ -3,7 +3,7 @@ platform :ios, '9.0'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target "mobile-engage-sample-app-ios" do
-  pod 'MobileEngageSDK'
+  pod 'MobileEngageSDK', '0.7.0'
 end
 
 target "mobile-engage-sample-app-iosTests" do
