@@ -103,13 +103,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdQ-QX-NkU">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YL0-49-yEA" userLabel="InnerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Wxn-JC-yvM">
-                                                <rect key="frame" x="0.0" y="40" width="320" height="508"/>
+                                                <rect key="frame" x="0.0" y="40" width="320" height="459"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t0-66-AqH">
                                                         <rect key="frame" x="101.5" y="0.0" width="117" height="30"/>
@@ -154,7 +154,7 @@
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8dl-at-qm9">
-                                                        <rect key="frame" x="33" y="213" width="254" height="30"/>
+                                                        <rect key="frame" x="33" y="207" width="254" height="30"/>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vZf-1Q-mna">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
@@ -176,21 +176,21 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mi0-Rs-Gz5">
-                                                        <rect key="frame" x="20" y="263" width="280" height="1"/>
+                                                        <rect key="frame" x="20" y="239" width="280" height="1"/>
                                                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Lhi-v9-4hg"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="customEventName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stu-X8-Dyp">
-                                                        <rect key="frame" x="20" y="284" width="280" height="30"/>
+                                                        <rect key="frame" x="20" y="260" width="280" height="30"/>
                                                         <color key="backgroundColor" white="0.92444196430000003" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="{&quot;eventAttributesKey1&quot;: &quot;value&quot;, &quot;eventAttributesKey2&quot;: &quot;value&quot;}" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xvA-E6-hdY">
-                                                        <rect key="frame" x="20" y="316" width="280" height="100"/>
+                                                        <rect key="frame" x="20" y="292" width="280" height="100"/>
                                                         <color key="backgroundColor" white="0.92444196428571423" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="lWj-EB-Joa"/>
@@ -199,21 +199,21 @@
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehx-Ov-bVh">
-                                                        <rect key="frame" x="96.5" y="418" width="127" height="30"/>
+                                                        <rect key="frame" x="96.5" y="394" width="127" height="30"/>
                                                         <state key="normal" title="trackCustomEvent"/>
                                                         <connections>
                                                             <action selector="trackCustomEventButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRk-jH-Dok"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9L-iL-bVV">
-                                                        <rect key="frame" x="20" y="468" width="280" height="1"/>
+                                                        <rect key="frame" x="20" y="426" width="280" height="1"/>
                                                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="XkT-ag-Ujc"/>
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbl-bL-FUJ">
-                                                        <rect key="frame" x="138" y="478" width="44" height="30"/>
+                                                        <rect key="frame" x="138" y="429" width="44" height="30"/>
                                                         <state key="normal" title="logout"/>
                                                         <connections>
                                                             <action selector="logoutButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B9X-PX-7U8"/>
@@ -246,20 +246,20 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="YL0-49-yEA" secondAttribute="trailing" id="1gh-Rp-SOY"/>
+                                    <constraint firstItem="YL0-49-yEA" firstAttribute="height" secondItem="QdQ-QX-NkU" secondAttribute="height" id="38E-Iz-kKZ"/>
                                     <constraint firstItem="YL0-49-yEA" firstAttribute="top" secondItem="QdQ-QX-NkU" secondAttribute="top" id="9b9-bf-Bhu"/>
                                     <constraint firstItem="YL0-49-yEA" firstAttribute="width" secondItem="QdQ-QX-NkU" secondAttribute="width" id="VNb-05-YnJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="YL0-49-yEA" secondAttribute="bottom" id="mPc-Cm-ZgW"/>
                                     <constraint firstItem="YL0-49-yEA" firstAttribute="leading" secondItem="QdQ-QX-NkU" secondAttribute="leading" id="sJF-Iu-txS"/>
-                                    <constraint firstAttribute="bottom" secondItem="YL0-49-yEA" secondAttribute="bottom" id="vGA-sB-ack"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YL0-49-yEA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-20" id="0Yl-pJ-xEG"/>
                             <constraint firstItem="QdQ-QX-NkU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ATA-jO-NcL"/>
                             <constraint firstAttribute="trailing" secondItem="QdQ-QX-NkU" secondAttribute="trailing" id="SkB-I5-6u6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QdQ-QX-NkU" secondAttribute="bottom" id="oCh-MV-GcB"/>
                             <constraint firstItem="QdQ-QX-NkU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pFw-2p-8qI"/>
-                            <constraint firstAttribute="bottom" secondItem="QdQ-QX-NkU" secondAttribute="bottom" id="stN-ZH-d8b"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MobileEngage" image="logo" selectedImage="logo" id="lrg-hz-h7I"/>
@@ -269,7 +269,7 @@
                         <outlet property="customEventAttributesTextView" destination="xvA-E6-hdY" id="w56-77-dYG"/>
                         <outlet property="customEventNameTextField" destination="stu-X8-Dyp" id="HfU-hg-KKM"/>
                         <outlet property="scrollView" destination="QdQ-QX-NkU" id="bH6-pF-SaV"/>
-                        <outlet property="scrollViewBottomConstraint" destination="stN-ZH-d8b" id="WwT-la-Udf"/>
+                        <outlet property="scrollViewBottomConstraint" destination="oCh-MV-GcB" id="iyj-3S-nFy"/>
                         <outlet property="sidTextField" destination="vZf-1Q-mna" id="rTk-9h-h8F"/>
                     </connections>
                 </viewController>
