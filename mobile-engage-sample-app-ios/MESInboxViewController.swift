@@ -40,7 +40,7 @@ class MESInboxViewController: UIViewController, UITableViewDataSource, UITableVi
             guard let inboxStatus = notificationInboxStatus else { return }
             self.notifications = inboxStatus.notifications
             self.notificationTableView?.reloadData()
-
+            
             self.tabBarItem.badgeValue = inboxStatus.badgeCount != 0 ? "\(inboxStatus.badgeCount)" : nil
             refreshControl?.endRefreshing()
         }) { [unowned self] error in
@@ -61,8 +61,26 @@ class MESInboxViewController: UIViewController, UITableViewDataSource, UITableVi
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "notificationCell", for: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = notifications[indexPath.row].title
-        cell.detailTextLabel?.text = "Received at \(notifications[indexPath.row].receivedAt!)"
+        let notification = notifications[indexPath.row];
+        
+        cell.textLabel?.text = notification.title
+        cell.detailTextLabel?.text = "Received at \(notification.receivedAt!)"
+        
+        cell.imageView?.image = #imageLiteral(resourceName: "placeholder")
+        
+        guard let imageUrlString = notification.customData["image"]  else {
+            return cell
+        }
+        
+        guard let imageUrl = URL(string: imageUrlString) else {
+            return cell
+        }
+        
+        URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
+            DispatchQueue.main.async {
+                cell.imageView?.image = data != nil ? UIImage(data: data!) : #imageLiteral(resourceName: "placeholder")
+            }
+        }.resume()
         
         return cell
     }
