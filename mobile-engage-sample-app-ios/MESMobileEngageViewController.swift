@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import MobileEngageSDK
 
 class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegate {
 

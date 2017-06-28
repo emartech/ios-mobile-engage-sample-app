@@ -4,6 +4,7 @@
 
 import UIKit
 import UserNotifications
+import MobileEngageSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -4,6 +4,7 @@
 
 import Foundation
 import UIKit
+import MobileEngageSDK
 
 class MESInboxViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
