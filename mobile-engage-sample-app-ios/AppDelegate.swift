@@ -16,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.tintColor = UIColor(red: 101 / 255.0, green: 151 / 255.0, blue: 207 / 255.0, alpha: 1.0)
         
         let config = MEConfig.make { builder in
-            builder.setCredentialsWithApplicationCode("14C19-A121F", applicationPassword: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
+            #if DEBUG
+                builder.setCredentialsWithApplicationCode("14C19-A121F", applicationPassword: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
+            #else
+                builder.setCredentialsWithApplicationCode("EMS5D-F1638", applicationPassword: "U1T/s8JG6QcRKGckFbuz/yVekNappWAl")
+            #endif
         }
         MobileEngage.setup(with: config, launchOptions: launchOptions)
         
