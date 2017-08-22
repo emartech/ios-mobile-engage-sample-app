@@ -64,7 +64,7 @@ class MESInboxViewController: UIViewController, UITableViewDataSource, UITableVi
         let notification = notifications[indexPath.row];
         
         cell.textLabel?.text = notification.title
-        cell.detailTextLabel?.text = "Received at \(notification.receivedAt!)"
+        cell.detailTextLabel?.text = "Received at \(Date(timeIntervalSince1970: notification.receivedAtTimestamp.doubleValue))"
         
         cell.imageView?.image = #imageLiteral(resourceName: "placeholder")
         
