@@ -66,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F698EB3B1EE2A3F830AAAA9 /* Pods-RichNotificationExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichNotificationExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RichNotificationExtension/Pods-RichNotificationExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerKeyboardHandling.swift; sourceTree = "<group>"; };
 		16629EF31EF3FA3400FE221E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		16E056A91EA8A76500DAE104 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
@@ -100,6 +101,8 @@
 		8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MESInboxViewController.swift; sourceTree = "<group>"; };
 		D318495ABBAEBB583A83FA15 /* Pods-MESServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MESServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E8113DAD537EA34AC5521BA5 /* Pods_MESServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MESServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8368A615D7046521BB2A7AA /* Pods_RichNotificationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichNotificationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC060263A59DAFFA94D9EEC8 /* Pods-RichNotificationExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichNotificationExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RichNotificationExtension/Pods-RichNotificationExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 				1F0BDDC972880751EC55F113 /* Pods_mobile_engage_sample_app_ios.framework */,
 				72403FC5FF178C8BC67C12E1 /* Pods_mobile_engage_sample_app_iosTests.framework */,
 				E8113DAD537EA34AC5521BA5 /* Pods_MESServiceExtension.framework */,
+				F8368A615D7046521BB2A7AA /* Pods_RichNotificationExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,6 +227,8 @@
 				5A5F4BC4FB46A6FFAC90BDBF /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */,
 				3CCAE7C9E453C5674BCC16A9 /* Pods-MESServiceExtension.debug.xcconfig */,
 				D318495ABBAEBB583A83FA15 /* Pods-MESServiceExtension.release.xcconfig */,
+				0F698EB3B1EE2A3F830AAAA9 /* Pods-RichNotificationExtension.debug.xcconfig */,
+				FC060263A59DAFFA94D9EEC8 /* Pods-RichNotificationExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
