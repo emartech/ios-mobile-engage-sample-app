@@ -61,10 +61,12 @@ class MESInboxViewController: UIViewController, UITableViewDataSource, UITableVi
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "notificationCell", for: indexPath) as UITableViewCell
         
-        let notification = notifications[indexPath.row];
+        let notification = notifications[indexPath.row]
         
         cell.textLabel?.text = notification.title
-        cell.detailTextLabel?.text = "Received at \(Date(timeIntervalSince1970: notification.receivedAtTimestamp.doubleValue))"
+        cell.detailTextLabel?.numberOfLines = 2
+
+        cell.detailTextLabel?.text = "\(notification.body!)\nReceived at \(Date(timeIntervalSince1970: notification.receivedAtTimestamp.doubleValue))"
         
         cell.imageView?.image = #imageLiteral(resourceName: "placeholder")
         
