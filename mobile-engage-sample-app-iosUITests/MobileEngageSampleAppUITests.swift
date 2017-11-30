@@ -12,6 +12,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
+        sleep(1)
     }
 
     func testAnonymAppLogin() {
@@ -44,6 +45,38 @@ class MobileEngageSampleAppUITests: XCTestCase {
         eventuallyAssertSuccess {
             app.buttons["trackCustomEvent"].tap()
         }
+    }
+
+    func testIAM() {
+        let contactFieldIdTextField = app.textFields["contactFieldId"]
+        let contactFieldValueTextField = app.textFields["contactFieldValue"]
+
+        contactFieldIdTextField.tap()
+        contactFieldIdTextField.typeText("3")
+
+        contactFieldValueTextField.tap()
+        contactFieldValueTextField.typeText("test@test.com")
+
+        let customeventnameTextField = app.textFields["customEventName"]
+
+        let okButton = app.alerts.buttons["OK"]
+        let okButtonPredicate = NSPredicate(format: "exists == true")
+        expectation(for: okButtonPredicate, evaluatedWith: okButton, handler: nil)
+
+        app.buttons["login"].tap()
+
+        waitForExpectations(timeout: 5, handler: nil)
+
+        customeventnameTextField.tap()
+        customeventnameTextField.typeText("Test")
+
+        let closeButton = app.buttons["Close"]
+        let closeButtonPredicate = NSPredicate(format: "exists == true")
+        expectation(for: closeButtonPredicate, evaluatedWith: closeButton, handler: nil)
+
+        app.buttons["trackCustomEvent"].tap()
+
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
     func testTrackMessageOpen() {
