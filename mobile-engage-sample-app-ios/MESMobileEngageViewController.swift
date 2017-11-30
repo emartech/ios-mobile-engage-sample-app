@@ -6,8 +6,6 @@ import UIKit
 import MobileEngageSDK
 
 class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegate {
-    
-    var lastCustomEventId: String?
 
 //MARK: Outlets
     @IBOutlet weak var contactFieldIdTextField: UITextField!
@@ -17,7 +15,7 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
     @IBOutlet weak var customEventAttributesTextView: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var scrollViewBottomConstraint: NSLayoutConstraint!
-    
+
 //MARK: ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +68,7 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
                 }
             }
         }
-        lastCustomEventId = MobileEngage.trackCustomEvent(eventName, eventAttributes: eventAttributes)
+        MobileEngage.trackCustomEvent(eventName, eventAttributes: eventAttributes)
     }
 
     @IBAction func logoutButtonClicked(_ sender: Any) {
@@ -83,9 +81,7 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
 
 //MARK: MobileEngageStatusDelegate
     func mobileEngageLogReceived(withEventId eventId: String, log: String) {
-        if(eventId != lastCustomEventId) {
-            showAlert(with: "EventId: \(eventId) \n Log: \(log)")
-        }
+        showAlert(with: "EventId: \(eventId) \n Log: \(log)")
         print(eventId, log)
     }
 

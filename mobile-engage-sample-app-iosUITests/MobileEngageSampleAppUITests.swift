@@ -35,17 +35,6 @@ class MobileEngageSampleAppUITests: XCTestCase {
         }
     }
 
-    func testTrackMessageOpen() {
-        let sidTextField = app.textFields["sid"]
-
-        sidTextField.tap()
-        sidTextField.typeText("dd8_zXfDdndBNEQi")
-
-        eventuallyAssertSuccess {
-            app.buttons["trackMessageOpen"].tap()
-        }
-    }
-
     func testTrackCustomEvent() {
         let customeventnameTextField = app.textFields["customEventName"]
 
@@ -54,6 +43,17 @@ class MobileEngageSampleAppUITests: XCTestCase {
 
         eventuallyAssertSuccess {
             app.buttons["trackCustomEvent"].tap()
+        }
+    }
+
+    func testTrackMessageOpen() {
+        let sidTextField = app.textFields["sid"]
+
+        sidTextField.tap()
+        sidTextField.typeText("dd8_zXfDdndBNEQi")
+
+        eventuallyAssertSuccess {
+            app.buttons["trackMessageOpen"].tap()
         }
     }
 
