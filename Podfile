@@ -22,7 +22,13 @@ target "mobile-engage-sample-app-ios" do
 end
 
 target "MESServiceExtension" do
-    pod 'MobileEngageRichExtension', :path => '../ios-mobile-engage-sdk/'
+    if ENV["DEV"] then
+        pod 'MobileEngageRichExtension', :path => '../ios-mobile-engage-sdk/'
+    elsif ENV["BLEEDING_EDGE"] then
+        pod 'MobileEngageRichExtension', :git => 'git@github.com:emartech/ios-mobile-engage-sdk.git'
+    else
+        pod 'MobileEngageRichExtension'
+    end
 end
 
 target "mobile-engage-sample-app-iosTests" do
