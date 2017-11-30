@@ -6,6 +6,8 @@ import UIKit
 import MobileEngageSDK
 
 class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegate {
+    
+    var lastCustomEventId: String?
 
 //MARK: Outlets
     @IBOutlet weak var contactFieldIdTextField: UITextField!
@@ -68,7 +70,7 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
                 }
             }
         }
-        MobileEngage.trackCustomEvent(eventName, eventAttributes: eventAttributes)
+        lastCustomEventId = MobileEngage.trackCustomEvent(eventName, eventAttributes: eventAttributes)
     }
 
     @IBAction func logoutButtonClicked(_ sender: Any) {
@@ -81,7 +83,9 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
 
 //MARK: MobileEngageStatusDelegate
     func mobileEngageLogReceived(withEventId eventId: String, log: String) {
-        showAlert(with: "EventId: \(eventId) \n Log: \(log)")
+        if(eventId != lastCustomEventId) {
+            showAlert(with: "EventId: \(eventId) \n Log: \(log)")
+        }
         print(eventId, log)
     }
 
