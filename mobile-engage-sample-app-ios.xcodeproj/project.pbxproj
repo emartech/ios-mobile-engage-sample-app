@@ -488,11 +488,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CoreSDK/CoreSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/MobileEngageSDK/MobileEngageSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/MobileEngageRichExtension/MobileEngageRichExtension.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobileEngageSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobileEngageRichExtension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

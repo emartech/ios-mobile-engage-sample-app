@@ -22,7 +22,7 @@ target "mobile-engage-sample-app-ios" do
 end
 
 target "MESServiceExtension" do
-    pods
+    pod 'MobileEngageRichExtension', :path => '../ios-mobile-engage-sdk/'
 end
 
 target "mobile-engage-sample-app-iosTests" do

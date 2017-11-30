@@ -2,7 +2,7 @@
 //  Copyright © 2017. Emarsys. All rights reserved.
 //
 
-import MobileEngageSDK
+import MobileEngageRichExtension
 
 class NotificationService: MENotificationService {
 }

@@ -1,2 +1,2 @@
-#import <MobileEngageSDK/MENotificationService.h>
-#import <MobileEngageSDK/UNNotificationAttachment+MobileEngage.h>
+#import <MobileEngageRichExtension/MENotificationService.h>
+#import <MobileEngageRichExtension/UNNotificationAttachment+MobileEngage.h>
