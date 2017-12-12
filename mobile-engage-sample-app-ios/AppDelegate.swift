@@ -7,7 +7,7 @@ import UserNotifications
 import MobileEngageSDK
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
 
     var window: UIWindow?
 
@@ -16,14 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.tintColor = UIColor(red: 101 / 255.0, green: 151 / 255.0, blue: 207 / 255.0, alpha: 1.0)
         
         let config = MEConfig.make { builder in
+            builder.setExperimentalFeatures([INAPP_MESSAGING]);
             #if DEBUG
                 builder.setCredentialsWithApplicationCode("14C19-A121F", applicationPassword: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
             #else
                 builder.setCredentialsWithApplicationCode("EMS5D-F1638", applicationPassword: "U1T/s8JG6QcRKGckFbuz/yVekNappWAl")
             #endif
         }
-        MobileEngage.setup(with: config, launchOptions: launchOptions)
-        
+        MobileEngage.setup(with: config, launchOptions: launchOptions);
+        MobileEngage.inApp.messageHandler = self
+
         application.registerForRemoteNotifications()
         
         if #available(iOS 10.0, *) {
@@ -33,8 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             application.registerUserNotificationSettings(UIUserNotificationSettings.init(types: [.alert, .badge, .sound], categories: nil))
         }
-        
         return true
+    }
+
+    func handleApplicationEvent(_ eventName: String, payload: [String: NSObject]?) {
+        print(eventName, payload)
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

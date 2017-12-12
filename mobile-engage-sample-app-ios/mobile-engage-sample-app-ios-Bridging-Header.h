@@ -6,3 +6,6 @@
 #import <MobileEngageSDK/MEInbox.h>
 #import <MobileEngageSDK/MENotificationInboxStatus.h>
 #import <MobileEngageSDK/MENotification.h>
+#import <MobileEngageSDK/MEInApp.h>
+#import <MobileEngageSDK/MEInAppMessageHandler.h>
+
