@@ -5,6 +5,19 @@
 import XCTest
 import Foundation
 
+
+extension XCUIElement {
+    func clearTextField() {
+        guard let stringValue = self.value as? String else {
+            XCTFail("Tried to clear and enter text into a non string value")
+            return
+        }
+        self.tap()
+        let deleteString = stringValue.characters.map { _ in XCUIKeyboardKeyDelete }.joined(separator: "")
+        self.typeText(deleteString)
+    }
+}
+
 class MobileEngageSampleAppUITests: XCTestCase {
 
     let app = XCUIApplication()
@@ -26,9 +39,11 @@ class MobileEngageSampleAppUITests: XCTestCase {
         let contactFieldValueTextField = app.textFields["contactFieldValue"]
 
         contactFieldIdTextField.tap()
+        contactFieldIdTextField.clearTextField()
         contactFieldIdTextField.typeText("123456789")
 
         contactFieldValueTextField.tap()
+        contactFieldValueTextField.clearTextField()
         contactFieldValueTextField.typeText("contactFieldValue")
 
         eventuallyAssertSuccess {
@@ -41,9 +56,11 @@ class MobileEngageSampleAppUITests: XCTestCase {
         let contactFieldValueTextField = app.textFields["contactFieldValue"]
         
         contactFieldIdTextField.tap()
+        contactFieldIdTextField.clearTextField()
         contactFieldIdTextField.typeText("3")
         
         contactFieldValueTextField.tap()
+        contactFieldValueTextField.clearTextField()
         contactFieldValueTextField.typeText("test@test.com")
         
         let customeventnameTextField = app.textFields["customEventName"]
@@ -57,6 +74,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
 
         customeventnameTextField.tap()
+        customeventnameTextField.clearTextField()
         customeventnameTextField.typeText("customEventName")
 
         eventuallyAssertSuccess {
@@ -69,9 +87,11 @@ class MobileEngageSampleAppUITests: XCTestCase {
         let contactFieldValueTextField = app.textFields["contactFieldValue"]
 
         contactFieldIdTextField.tap()
+        contactFieldIdTextField.clearTextField()
         contactFieldIdTextField.typeText("3")
 
         contactFieldValueTextField.tap()
+        contactFieldValueTextField.clearTextField()
         contactFieldValueTextField.typeText("test@test.com")
 
         let customeventnameTextField = app.textFields["customEventName"]
@@ -85,6 +105,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
 
         customeventnameTextField.tap()
+        customeventnameTextField.clearTextField()
         customeventnameTextField.typeText("Test")
 
         let closeButton = app.buttons["Close"]
@@ -101,6 +122,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
         let sidTextField = app.textFields["sid"]
 
         sidTextField.tap()
+        sidTextField.clearTextField()
         sidTextField.typeText("dd8_zXfDdndBNEQi")
 
         eventuallyAssertSuccess {
