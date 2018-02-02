@@ -64,7 +64,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
 
         app.buttons["login"].tap()
 
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 30, handler: nil)
 
         customeventnameTextField.tap()
         customeventnameTextField.typeText("Test")
@@ -75,7 +75,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
 
         app.buttons["trackCustomEvent"].tap()
 
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 30, handler: nil)
         XCUIApplication().terminate()
     }
 
@@ -103,7 +103,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
 
         action()
 
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 30, handler: nil)
         XCTAssert(okButton.exists)
         XCTAssert(app.alerts.element.label.lowercased().contains("success"))
     }
