@@ -12,7 +12,10 @@ class MobileEngageSampleAppUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
-        XCUIApplication().activate()
+
+        app.launchEnvironment = ["applicationCode": "EMSEC-B103E",
+                                 "applicationPassword": "RM1ZSuX8mgRBhQIgOsf6m8bn/bMQLAIb"]
+        app.activate()
     }
 
     func testAnonymAppLogin() {
