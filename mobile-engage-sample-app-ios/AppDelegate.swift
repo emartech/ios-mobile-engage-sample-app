@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
         let config = MEConfig.make { builder in
             builder.setExperimentalFeatures([INAPP_MESSAGING]);
             if let applicationCode = ProcessInfo.processInfo.environment["applicationCode"] as? String,
-               let applicationPassword = ProcessInfo.processInfo.environment["applicationCode"] as? String {
+               let applicationPassword = ProcessInfo.processInfo.environment["applicationPassword"] as? String {
                 builder.setCredentialsWithApplicationCode(applicationCode, applicationPassword: applicationPassword)
             } else {
 #if DEBUG
