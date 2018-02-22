@@ -43,6 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
         return true
     }
 
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        return MobileEngage.trackDeepLink(with: userActivity, sourceHandler: { url in
+            if let source = url {
+                print(source)
+            }
+        })
+    }
+
     func handleApplicationEvent(_ eventName: String, payload: [String: NSObject]?) {
         print(eventName, payload)
     }
