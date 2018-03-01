@@ -75,6 +75,10 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
         MobileEngage.appLogout()
     }
 
+    @IBAction func togglePausedValue(_ sender: UISwitch) {
+        MobileEngage.inApp.paused = sender.isOn
+    }
+    
     func backgroundTapped() {
         self.view.endEditing(true)
     }
