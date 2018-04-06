@@ -352,7 +352,7 @@
 						};
 					};
 					32C6F498F6A3E99EB5BA1BC2 = {
-						DevelopmentTeam = 8LAPGQR7L8;
+						DevelopmentTeam = 7ZFXXDJH82;
 					};
 					8A77AC4A1F46E31700F9F2A6 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -769,7 +769,7 @@
 		32C6F34C50D69E475673FF7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 8LAPGQR7L8;
+				DEVELOPMENT_TEAM = 7ZFXXDJH82;
 				INFOPLIST_FILE = "mobile-engage-sample-app-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-iosUITests";
@@ -782,7 +782,7 @@
 		32C6F471FFC4629DB7DF18F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 8LAPGQR7L8;
+				DEVELOPMENT_TEAM = 7ZFXXDJH82;
 				INFOPLIST_FILE = "mobile-engage-sample-app-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emarsys.mobile-engage-sample-app-iosUITests";
