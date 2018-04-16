@@ -42,7 +42,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
 
         trackCustomEvent(customEventName: "Test")
 
-        wait(for: [closeExpectation], timeout: 30)
+        wait(for: [closeExpectation], timeout: 60)
         XCUIApplication().terminate()
     }
 
@@ -50,6 +50,8 @@ class MobileEngageSampleAppUITests: XCTestCase {
         let sidTextField = app.textFields["sid"]
 
         clearText(on: sidTextField)
+        
+        sidTextField.tap()
         sidTextField.typeText("dd8_zXfDdndBNEQi")
 
         eventuallyAssertSuccess(with: "Message open: 💚 OK") {
