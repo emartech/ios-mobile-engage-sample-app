@@ -3,6 +3,7 @@
 //
 
 import XCTest
+import Foundation
 
 class MobileEngageSampleAppUITests: XCTestCase {
 
@@ -11,101 +12,112 @@ class MobileEngageSampleAppUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
-        XCUIApplication().launch()
-        sleep(1)
+
+        app.launchEnvironment = ["applicationCode": "EMSEC-B103E",
+                                 "applicationPassword": "RM1ZSuX8mgRBhQIgOsf6m8bn/bMQLAIb"]
+        app.activate()
     }
 
     func testAnonymAppLogin() {
-        eventuallyAssertSuccess {
+        eventuallyAssertSuccess(with: "Anonymus login: 💚 OK") {
             app.buttons["anonymousLogin"].tap()
         }
     }
 
     func testLogin() {
-        let contactFieldIdTextField = app.textFields["contactFieldId"]
-        let contactFieldValueTextField = app.textFields["contactFieldValue"]
-
-        contactFieldIdTextField.tap()
-        contactFieldIdTextField.typeText("123456789")
-
-        contactFieldValueTextField.tap()
-        contactFieldValueTextField.typeText("contactFieldValue")
-
-        eventuallyAssertSuccess {
-            app.buttons["login"].tap()
-        }
+        login(contactFieldId: "123456789", contactFieldValue: "contactFieldValue")
     }
 
     func testTrackCustomEvent() {
-        let customeventnameTextField = app.textFields["customEventName"]
-
-        customeventnameTextField.tap()
-        customeventnameTextField.typeText("customEventName")
-
-        eventuallyAssertSuccess {
-            app.buttons["trackCustomEvent"].tap()
-        }
+        trackCustomEvent(customEventName: "customEventName")
     }
 
     func testIAM() {
-        let contactFieldIdTextField = app.textFields["contactFieldId"]
-        let contactFieldValueTextField = app.textFields["contactFieldValue"]
+        login(contactFieldId: "3", contactFieldValue: "test@test.com")
 
-        contactFieldIdTextField.tap()
-        contactFieldIdTextField.typeText("3")
-
-        contactFieldValueTextField.tap()
-        contactFieldValueTextField.typeText("test@test.com")
-
-        let customeventnameTextField = app.textFields["customEventName"]
-
-        let okButton = app.alerts.buttons["OK"]
-        let okButtonPredicate = NSPredicate(format: "exists == true")
-        expectation(for: okButtonPredicate, evaluatedWith: okButton, handler: nil)
-
-        app.buttons["login"].tap()
-
-        waitForExpectations(timeout: 5, handler: nil)
-
-        customeventnameTextField.tap()
-        customeventnameTextField.typeText("Test")
 
         let closeButton = app.buttons["Close"]
         let closeButtonPredicate = NSPredicate(format: "exists == true")
-        expectation(for: closeButtonPredicate, evaluatedWith: closeButton, handler: nil)
+        let closeExpectation = expectation(for: closeButtonPredicate, evaluatedWith: closeButton, handler: nil)
 
-        app.buttons["trackCustomEvent"].tap()
+        trackCustomEvent(customEventName: "Test")
 
-        waitForExpectations(timeout: 5, handler: nil)
+        wait(for: [closeExpectation], timeout: 60)
+        XCUIApplication().terminate()
     }
 
     func testTrackMessageOpen() {
         let sidTextField = app.textFields["sid"]
 
+        clearText(on: sidTextField)
+        
         sidTextField.tap()
         sidTextField.typeText("dd8_zXfDdndBNEQi")
 
-        eventuallyAssertSuccess {
+        eventuallyAssertSuccess(with: "Message open: 💚 OK") {
             app.buttons["trackMessageOpen"].tap()
         }
     }
 
     func testAppLogout() {
-        eventuallyAssertSuccess {
+        eventuallyAssertSuccess(with: "App logout: 💚 OK") {
             app.buttons["logout"].tap()
         }
     }
 
-    func eventuallyAssertSuccess(action: () -> ()) {
-        let okButton = app.alerts.buttons["OK"]
+    func eventuallyAssertSuccess(with successMessage: String, action: () -> ()) {
+        let tvInfo = app.textViews[successMessage]
         let predicate = NSPredicate(format: "exists == true")
-        expectation(for: predicate, evaluatedWith: okButton, handler: nil)
+        let responseExpectation = expectation(for: predicate, evaluatedWith: tvInfo, handler: nil)
 
         action()
 
-        waitForExpectations(timeout: 5, handler: nil)
-        XCTAssert(okButton.exists)
-        XCTAssert(app.alerts.element.label.lowercased().contains("success"))
+        wait(for: [responseExpectation], timeout: 30)
+        XCTAssert(tvInfo.exists)
+    }
+
+    func login(contactFieldId: String, contactFieldValue: String) {
+        let tfContactFieldId = app.textFields["contactFieldId"]
+        let tfContactFieldValue = app.textFields["contactFieldValue"]
+
+        clearText(on: tfContactFieldId)
+        clearText(on: tfContactFieldValue)
+
+        tfContactFieldId.tap()
+        tfContactFieldId.typeText(contactFieldId)
+
+        tfContactFieldValue.tap()
+        tfContactFieldValue.typeText(contactFieldValue)
+
+        eventuallyAssertSuccess(with: "Login: 💚 OK") {
+            app.buttons["login"].tap()
+        }
+    }
+
+    func trackCustomEvent(customEventName: String) {
+        let tfCustomEventName = app.textFields["customEventName"]
+
+        clearText(on: tfCustomEventName)
+
+        tfCustomEventName.tap()
+        tfCustomEventName.typeText(customEventName)
+
+        eventuallyAssertSuccess(with: "Track custom event: 💚 OK") {
+            app.buttons["trackCustomEvent"].tap()
+        }
+    }
+
+    func clearText(on element: XCUIElement) {
+        guard let stringValue = element.value as? String else {
+            return
+        }
+        element.tap()
+
+        let deleteString = stringValue.map { _ in
+            XCUIKeyboardKeyDelete
+        }.joined(separator: "")
+
+        element.typeText(deleteString)
     }
 
 }

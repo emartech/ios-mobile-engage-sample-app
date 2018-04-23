@@ -17,11 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
 
         let config = MEConfig.make { builder in
             builder.setExperimentalFeatures([INAPP_MESSAGING]);
+            if let applicationCode = ProcessInfo.processInfo.environment["applicationCode"] as? String,
+               let applicationPassword = ProcessInfo.processInfo.environment["applicationPassword"] as? String {
+                builder.setCredentialsWithApplicationCode(applicationCode, applicationPassword: applicationPassword)
+            } else {
 #if DEBUG
-            builder.setCredentialsWithApplicationCode("14C19-A121F", applicationPassword: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
+                builder.setCredentialsWithApplicationCode("14C19-A121F", applicationPassword: "PaNkfOD90AVpYimMBuZopCpm8OWCrREu")
 #else
-            builder.setCredentialsWithApplicationCode("EMS5D-F1638", applicationPassword: "U1T/s8JG6QcRKGckFbuz/yVekNappWAl")
+                builder.setCredentialsWithApplicationCode("EMS5D-F1638", applicationPassword: "U1T/s8JG6QcRKGckFbuz/yVekNappWAl")
 #endif
+            }
         }
         MobileEngage.setup(with: config, launchOptions: launchOptions);
         MobileEngage.inApp.messageHandler = self
@@ -36,6 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
             application.registerUserNotificationSettings(UIUserNotificationSettings.init(types: [.alert, .badge, .sound], categories: nil))
         }
         return true
+    }
+
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        return MobileEngage.trackDeepLink(with: userActivity, sourceHandler: { url in
+            if let source = url {
+                print(source)
+            }
+        })
     }
 
     func handleApplicationEvent(_ eventName: String, payload: [String: NSObject]?) {

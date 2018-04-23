@@ -7,7 +7,6 @@ import MobileEngageSDK
 
 class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegate {
 
-    var pushToken: String?
 
 //MARK: Outlets
     @IBOutlet weak var contactFieldIdTextField: UITextField!
@@ -17,6 +16,11 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
     @IBOutlet weak var customEventAttributesTextView: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var scrollViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tvInfos: UITextView!
+
+//MARK: Variables
+    var triggeredEvents: [String] = []
+    var pushToken: String?
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -39,7 +43,9 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
 
 //MARK: Actions
     @IBAction func anonymLoginButtonClicked(_ sender: Any) {
-        MobileEngage.appLogin()
+        let eventId = MobileEngage.appLogin()
+        triggeredEvents.append(eventId)
+        self.tvInfos.text = "Anonymus login: "
     }
 
     @IBAction func loginButtonClicked(_ sender: Any) {
@@ -49,7 +55,9 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
             showAlert(with: "Wrong parameter")
             return
         }
-        MobileEngage.appLogin(withContactFieldId: id as NSNumber, contactFieldValue: valueText)
+        let eventId = MobileEngage.appLogin(withContactFieldId: id as NSNumber, contactFieldValue: valueText)
+        triggeredEvents.append(eventId)
+        self.tvInfos.text = "Login: "
 
         let inboxViewController = self.tabBarController?.viewControllers?[1] as! MESInboxViewController
         inboxViewController.refresh(refreshControl: nil)
@@ -60,7 +68,9 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
             showAlert(with: "Missing sid")
             return
         }
-        MobileEngage.trackMessageOpen(userInfo: ["u": "{\"sid\":\"\(sid)\"}"])
+        let eventId = MobileEngage.trackMessageOpen(userInfo: ["u": "{\"sid\":\"\(sid)\"}"])
+        triggeredEvents.append(eventId)
+        self.tvInfos.text = "Message open: "
     }
 
     @IBAction func trackCustomEventButtonClicked(_ sender: Any) {
@@ -79,11 +89,19 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
                 }
             }
         }
-        MobileEngage.trackCustomEvent(eventName, eventAttributes: eventAttributes)
+        let eventId = MobileEngage.trackCustomEvent(eventName, eventAttributes: eventAttributes)
+        triggeredEvents.append(eventId)
+        self.tvInfos.text = "Track custom event: "
     }
 
     @IBAction func logoutButtonClicked(_ sender: Any) {
-        MobileEngage.appLogout()
+        let eventId = MobileEngage.appLogout()
+        triggeredEvents.append(eventId)
+        self.tvInfos.text = "App logout: "
+    }
+
+    @IBAction func togglePausedValue(_ sender: UISwitch) {
+        MobileEngage.inApp.paused = sender.isOn
     }
 
     func backgroundTapped() {
@@ -104,13 +122,29 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
 
 //MARK: MobileEngageStatusDelegate
     func mobileEngageLogReceived(withEventId eventId: String, log: String) {
-        showAlert(with: "EventId: \(eventId) \n Log: \(log)")
+        if (triggeredEvents.contains(eventId)) {
+            self.tvInfos.text.append("💚 OK")
+            self.triggeredEvents.remove(eventId)
+        }
         print(eventId, log)
     }
 
     func mobileEngageErrorHappened(withEventId eventId: String, error: Error) {
-        showAlert(with: "EventId: \(eventId) \n Error: \(error)")
+        if (triggeredEvents.contains(eventId)) {
+            self.tvInfos.text.append("💔 \(error)")
+            self.triggeredEvents.remove(eventId)
+        }
         print(eventId, error)
     }
 
+}
+
+extension Array where Element: Equatable {
+
+    mutating func remove(_ element: Element) {
+        guard let elementIndex = self.index(where: { $0 == element }) else {
+            return
+        }
+        self.remove(at: elementIndex)
+    }
 }
