@@ -26,7 +26,7 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
         super.init(coder: aDecoder)
         NotificationCenter.default.addObserver(forName: NotificationNames.pushTokenArrived.asNotificationName(), object: nil, queue: OperationQueue.main) { [unowned self] (notification: Notification) in
             if let data = notification.userInfo?["push_token"] as? Data {
-                self.pushToken = String(data: data, encoding: String.Encoding.utf8)
+                self.pushToken = data.map { String(format: "%02.2hhx", $0) }.joined()
             }
         }
     }
