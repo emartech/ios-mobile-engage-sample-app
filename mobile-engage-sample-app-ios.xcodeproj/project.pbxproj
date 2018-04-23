@@ -24,6 +24,7 @@
 		8AB649811E83FDDB00C8E6D7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB6497F1E83FDDB00C8E6D7 /* libz.tbd */; };
 		8AE13C171EF94F15005B5267 /* MESInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */; };
 		9119182008BFB6BA574A6EA2 /* Pods_mobile_engage_sample_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0BDDC972880751EC55F113 /* Pods_mobile_engage_sample_app_ios.framework */; };
+		ACC23BBE466ED1DC17A8FD7C /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC233F069D99297D20FD632 /* NotificationNames.swift */; };
 		D55C6265E7E05823A7C8D478 /* Pods_mobile_engage_sample_app_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72403FC5FF178C8BC67C12E1 /* Pods_mobile_engage_sample_app_iosTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		8AB649821E84004F00C8E6D7 /* mobile-engage-sample-app-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mobile-engage-sample-app-ios.entitlements"; sourceTree = "<group>"; };
 		8AD0E8911F46E6C9007382D8 /* MESServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MESServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MESInboxViewController.swift; sourceTree = "<group>"; };
+		ACC233F069D99297D20FD632 /* NotificationNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
 		D318495ABBAEBB583A83FA15 /* Pods-MESServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MESServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E8113DAD537EA34AC5521BA5 /* Pods_MESServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MESServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8368A615D7046521BB2A7AA /* Pods_RichNotificationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichNotificationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 				1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */,
 				32C6FA62A0FE28B499F7EFEE /* mobile-engage-sample-app-ios-Bridging-Header.h */,
 				8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */,
+				ACC233F069D99297D20FD632 /* NotificationNames.swift */,
 			);
 			path = "mobile-engage-sample-app-ios";
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */,
 				32C6FC88AE32C5088C1B9C2F /* MESMobileEngageViewController.swift in Sources */,
 				8AE13C171EF94F15005B5267 /* MESInboxViewController.swift in Sources */,
+				ACC23BBE466ED1DC17A8FD7C /* NotificationNames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

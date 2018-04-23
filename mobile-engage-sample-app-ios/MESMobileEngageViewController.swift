@@ -7,6 +7,8 @@ import MobileEngageSDK
 
 class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegate {
 
+    var pushToken: String?
+
 //MARK: Outlets
     @IBOutlet weak var contactFieldIdTextField: UITextField!
     @IBOutlet weak var contactFieldValueTextField: UITextField!
@@ -15,6 +17,15 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
     @IBOutlet weak var customEventAttributesTextView: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var scrollViewBottomConstraint: NSLayoutConstraint!
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        NotificationCenter.default.addObserver(forName: NotificationNames.pushTokenArrived.asNotificationName(), object: nil, queue: OperationQueue.main) { [unowned self] (notification: Notification) in
+            if let data = notification.userInfo?["push_token"] as? Data {
+                self.pushToken = String(data: data, encoding: String.Encoding.utf8)
+            }
+        }
+    }
 
 //MARK: ViewController
     override func viewDidLoad() {
@@ -77,6 +88,18 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
 
     func backgroundTapped() {
         self.view.endEditing(true)
+    }
+
+    @IBAction func showPushTokenButtonClicked(_ sender: Any) {
+        var message: String = ""
+        if (self.pushToken != nil) {
+            message = self.pushToken!
+        } else {
+            message = "No pushtoken"
+        }
+
+        showAlert(with: message)
+        UIPasteboard.general.string = message
     }
 
 //MARK: MobileEngageStatusDelegate
