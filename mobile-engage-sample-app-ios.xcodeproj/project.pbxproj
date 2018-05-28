@@ -258,7 +258,6 @@
 				32C6F032A875A9F48F40FE69 /* Frameworks */,
 				32C6F25E400BE65D023B4B7B /* Resources */,
 				8A8DD5648844A25E0BDBD781 /* [CP] Embed Pods Frameworks */,
-				3E8BEF36107C07DD99857843 /* [CP] Copy Pods Resources */,
 				16EFEBEF1F052B760050938F /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -298,7 +297,6 @@
 				32C6FFC2B6E3A5842728B9A8 /* Frameworks */,
 				32C6FB6E94744AFF28F49161 /* Resources */,
 				3E1A9B4A70FA82573FCB543B /* [CP] Embed Pods Frameworks */,
-				A806280EFBC94D9B2135CA79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,7 +316,6 @@
 				8A77AC471F46E31700F9F2A6 /* Sources */,
 				8A77AC481F46E31700F9F2A6 /* Frameworks */,
 				8A77AC491F46E31700F9F2A6 /* Resources */,
-				75E57C0D5917868A8649FF81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,36 +452,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E8BEF36107C07DD99857843 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75E57C0D5917868A8649FF81 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8A8DD5648844A25E0BDBD781 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,21 +472,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A806280EFBC94D9B2135CA79 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC25743A55AA73DEA6EB586C /* [CP] Check Pods Manifest.lock */ = {

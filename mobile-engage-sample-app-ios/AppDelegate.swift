@@ -7,7 +7,7 @@ import UserNotifications
 import MobileEngageSDK
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
+class AppDelegate: UIResponder, UIApplicationDelegate, MEEventHandler {
 
     var window: UIWindow?
 
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
             }
         }
         MobileEngage.setup(with: config, launchOptions: launchOptions);
-        MobileEngage.inApp.messageHandler = self
+        MobileEngage.inApp.eventHandler = self
 
         application.registerForRemoteNotifications()
 
@@ -51,8 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEInAppMessageHandler {
         })
     }
 
-    func handleApplicationEvent(_ eventName: String, payload: [String: NSObject]?) {
-        print(eventName, payload)
+    func handleEvent(_ eventName: String, payload: [String: NSObject]?) {
+        print(eventName, payload);
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
