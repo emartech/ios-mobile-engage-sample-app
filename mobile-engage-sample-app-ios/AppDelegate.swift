@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEEventHandler {
         }
         MobileEngage.setup(with: config, launchOptions: launchOptions);
         MobileEngage.inApp.eventHandler = self
+        MobileEngage.notification.eventHandler = self
 
         application.registerForRemoteNotifications()
 
