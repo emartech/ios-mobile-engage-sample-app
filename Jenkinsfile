@@ -34,7 +34,7 @@ def buildAndTest(platform, udid) {
     } finally {
       junit "$udid/ios-mobile-engage-sample-app/test_output/unit/*.junit"
       archiveArtifacts "$udid/ios-mobile-engage-sample-app/test_output/unit/*"
-    }  
+    }
   }
 }
 
@@ -46,8 +46,8 @@ node('master') {
       stage('Remove previous') {
         parallel iPhone_5S: {
             uninstallSample env.IPHONE_5S_ECID
-        }, iPhone_6S: {
-            uninstallSample env.IPHONE_6S_ECID
+        // }, iPhone_6S: {
+        //     uninstallSample env.IPHONE_6S_ECID
         }, iPad_Pro: {
             uninstallSample env.IPAD_PRO_ECID
         }, iOS_9_3_Simulator: {
@@ -57,8 +57,8 @@ node('master') {
       stage('Git Clone') {
         parallel iPhone_5S: {
             clone env.IPHONE_5S
-        }, iPhone_6S: {
-            clone env.IPHONE_6S
+        // }, iPhone_6S: {
+        //     clone env.IPHONE_6S
         }, iPad_Pro: {
             clone env.IPAD_PRO
         }, iOS_9_3_Simulator: {
@@ -68,8 +68,8 @@ node('master') {
       stage('Pod install') {
         parallel iPhone_5S: {
             podi env.IPHONE_5S
-        }, iPhone_6S: {
-            podi env.IPHONE_6S
+        // }, iPhone_6S: {
+        //     podi env.IPHONE_6S
         }, iPad_Pro: {
             podi env.IPAD_PRO
         }, iOS_9_3_Simulator: {
@@ -79,8 +79,8 @@ node('master') {
       stage('Build and Test'){
             parallel iPhone_5S: {
                 buildAndTest 'iOS', env.IPHONE_5S
-            }, iPhone_6S: {
-                buildAndTest 'iOS', env.IPHONE_6S
+            // }, iPhone_6S: {
+            //     buildAndTest 'iOS', env.IPHONE_6S
             }, iPad_Pro: {
                 buildAndTest 'iOS', env.IPAD_PRO
             }, iOS_9_3_Simulator: {
@@ -93,12 +93,12 @@ node('master') {
         sh "cd $udid/ios-mobile-engage-sample-app && gym --scheme mobile-engage-sample-app-ios --export_method enterprise -o ../../artifacts/ --verbose"
         archiveArtifacts "artifacts/*"
       }
-    
-      
+
+
       stage('Deploy IPA to Amazon S3') {
           sh env.IOS_AWS_DEPLOY_COMMAND
       }
-      
+
       stage('Finish') {
         echo "That is just pure awesome!"
       }
