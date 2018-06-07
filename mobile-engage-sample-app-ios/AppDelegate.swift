@@ -30,13 +30,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEEventHandler {
         }
         MobileEngage.setup(with: config, launchOptions: launchOptions);
         MobileEngage.inApp.eventHandler = self
-        MobileEngage.notification.eventHandler = self
+        MobileEngage.notificationCenterDelegate.eventHandler = self
 
         application.registerForRemoteNotifications()
 
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
                 print(granted, error ?? "no error")
+                if(granted) {
+                    UNUserNotificationCenter.current().delegate = MobileEngage.notificationCenterDelegate
+                }
             }
         } else {
             application.registerUserNotificationSettings(UIUserNotificationSettings.init(types: [.alert, .badge, .sound], categories: nil))

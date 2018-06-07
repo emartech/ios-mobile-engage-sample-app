@@ -253,7 +253,6 @@
 				32C6F25E400BE65D023B4B7B /* Resources */,
 				16EFEBEF1F052B760050938F /* Embed App Extensions */,
 				D10DF3910C9C321E455BF4A5 /* [CP] Embed Pods Frameworks */,
-				3651F176FBA0169E23385FF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,7 +291,6 @@
 				32C6FFC2B6E3A5842728B9A8 /* Frameworks */,
 				32C6FB6E94744AFF28F49161 /* Resources */,
 				B8E86E3CFBF97BA1AAC1A191 /* [CP] Embed Pods Frameworks */,
-				333892C800BA08F07918E3D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,7 +310,6 @@
 				8A77AC471F46E31700F9F2A6 /* Sources */,
 				8A77AC481F46E31700F9F2A6 /* Frameworks */,
 				8A77AC491F46E31700F9F2A6 /* Resources */,
-				31A58527D80A55F0F62C7638 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,51 +410,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31A58527D80A55F0F62C7638 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		333892C800BA08F07918E3D0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3651F176FBA0169E23385FF2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5C0A807E1AB56D19DBD80082 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
