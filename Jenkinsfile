@@ -40,8 +40,8 @@ node('master') {
       stage('Remove previous') {
         parallel iPhone_5S: {
             uninstallSample env.IPHONE_5S_ECID
-        // }, iPhone_6S: {
-        //     uninstallSample env.IPHONE_6S_ECID
+         }, iPhone_6S: {
+             uninstallSample env.IPHONE_6S_ECID
         }, iPad_Pro: {
             uninstallSample env.IPAD_PRO_ECID
         }, iOS_9_3_Simulator: {
@@ -51,8 +51,8 @@ node('master') {
       stage('Git Clone') {
         parallel iPhone_5S: {
             clone env.IPHONE_5S
-        // }, iPhone_6S: {
-        //     clone env.IPHONE_6S
+         }, iPhone_6S: {
+             clone env.IPHONE_6S
         }, iPad_Pro: {
             clone env.IPAD_PRO
         }, iOS_9_3_Simulator: {
@@ -62,8 +62,8 @@ node('master') {
       stage('Pod install') {
         parallel iPhone_5S: {
             podi env.IPHONE_5S
-        // }, iPhone_6S: {
-        //     podi env.IPHONE_6S
+         }, iPhone_6S: {
+             podi env.IPHONE_6S
         }, iPad_Pro: {
             podi env.IPAD_PRO
         }, iOS_9_3_Simulator: {
@@ -73,8 +73,8 @@ node('master') {
       stage('Build and Test'){
             parallel iPhone_5S: {
                 buildAndTest 'iOS', env.IPHONE_5S
-            // }, iPhone_6S: {
-            //     buildAndTest 'iOS', env.IPHONE_6S
+             }, iPhone_6S: {
+                 buildAndTest 'iOS', env.IPHONE_6S
             }, iPad_Pro: {
                 buildAndTest 'iOS', env.IPAD_PRO
             }, iOS_9_3_Simulator: {
