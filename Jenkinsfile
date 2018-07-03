@@ -6,13 +6,7 @@ def clone(udid) {
 
 def podi(udid) {
   lock("pod") {
-      if(bleedingEdge){
-            withEnv(['BLEEDING_EDGE=true']){
-                sh "cd $udid/ios-mobile-engage-sample-app && pod install"
-            }
-        } else {
-            sh "cd $udid/ios-mobile-engage-sample-app && pod install"
-        }
+    sh "cd $udid/ios-mobile-engage-sample-app && pod repo update && pod install"
   }
 }
 
