@@ -6,7 +6,7 @@ def clone(udid) {
 
 def podi(udid) {
   lock("pod") {
-    sh "cd $udid/ios-mobile-engage-sample-app && pod repo update && pod install"
+    sh "cd $udid/ios-mobile-engage-sample-app && pod repo update && pod update"
   }
 }
 

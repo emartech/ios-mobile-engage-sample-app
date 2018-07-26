@@ -17,15 +17,15 @@
 		32C6FBD37B3801FCB6888550 /* mobile_engage_sample_app_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F60AA7D49CB6A91FF331 /* mobile_engage_sample_app_iosTests.swift */; };
 		32C6FC88AE32C5088C1B9C2F /* MESMobileEngageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F8ADA7EE6439DD067136 /* MESMobileEngageViewController.swift */; };
 		32C6FF2D62142516FC97526E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */; };
-		4A548D398C94F368C611D612 /* Pods_mobile_engage_sample_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAEF19066D1FF1A4B0A5F2E /* Pods_mobile_engage_sample_app_ios.framework */; };
-		4FD478D7C53540FF28EAC11A /* Pods_mobile_engage_sample_app_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2D992805CB7ABE07633BFD /* Pods_mobile_engage_sample_app_iosTests.framework */; };
+		4D7D52564DAD0D71557DC7B9 /* Pods_mobile_engage_sample_app_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E9F98C52F442B693CA3FD7 /* Pods_mobile_engage_sample_app_iosTests.framework */; };
+		67579BC822FE6B7D747F19EF /* Pods_mobile_engage_sample_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8389FC87C6FA63051A562A59 /* Pods_mobile_engage_sample_app_ios.framework */; };
+		71F34ADFBBF2573A0E6B64C0 /* Pods_MESServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F4F7915FF5E284275A22BA /* Pods_MESServiceExtension.framework */; };
 		8A77AC4E1F46E31700F9F2A6 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77AC4D1F46E31700F9F2A6 /* NotificationService.swift */; };
 		8A77AC521F46E31700F9F2A6 /* MESServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A77AC4B1F46E31700F9F2A6 /* MESServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8AB649801E83FDDB00C8E6D7 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB6497E1E83FDDB00C8E6D7 /* libstdc++.tbd */; };
 		8AB649811E83FDDB00C8E6D7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB6497F1E83FDDB00C8E6D7 /* libz.tbd */; };
 		8AE13C171EF94F15005B5267 /* MESInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */; };
 		ACC23BBE466ED1DC17A8FD7C /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC233F069D99297D20FD632 /* NotificationNames.swift */; };
-		CD320743E9A7D9610ECB90F8 /* Pods_MESServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4FDD621A090CD914CDC363 /* Pods_MESServiceExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		036C36B5F3AF0EC0516164DE /* Pods-MESServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MESServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		1608A3BB1E8289110016C574 /* ViewControllerKeyboardHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerKeyboardHandling.swift; sourceTree = "<group>"; };
 		16629EF31EF3FA3400FE221E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		16E056A91EA8A76500DAE104 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		17729C0176DABE7079FF276D /* Pods-MESServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MESServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		2B2D992805CB7ABE07633BFD /* Pods_mobile_engage_sample_app_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_engage_sample_app_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6F07A15DBCD20DDA7D041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C6F16BF0FE4309A9886C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C6F440CCCB4FBA84DCE43C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +84,11 @@
 		32C6FBD8919E37AF13BF8AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32C6FC10EA592FE7DEECC0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		32C6FD56D4E3A2AB8A0057EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		7F4FDD621A090CD914CDC363 /* Pods_MESServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MESServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89F04F86F8D3A3D36024DC0E /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		3777AB6987B9FA24E244FB7A /* Pods-mobile-engage-sample-app-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios.release.xcconfig"; sourceTree = "<group>"; };
+		46568A0D11F73E228B4C3E22 /* Pods-MESServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MESServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		58F4F7915FF5E284275A22BA /* Pods_MESServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MESServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D40F2192AC47B07F85F217C /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		8389FC87C6FA63051A562A59 /* Pods_mobile_engage_sample_app_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_engage_sample_app_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A77AC4B1F46E31700F9F2A6 /* MESServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MESServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A77AC4D1F46E31700F9F2A6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8A77AC4F1F46E31700F9F2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,11 +97,11 @@
 		8AB649821E84004F00C8E6D7 /* mobile-engage-sample-app-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mobile-engage-sample-app-ios.entitlements"; sourceTree = "<group>"; };
 		8AD0E8911F46E6C9007382D8 /* MESServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MESServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		8AE13C161EF94F15005B5267 /* MESInboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MESInboxViewController.swift; sourceTree = "<group>"; };
+		8D0F1C17132312497040D2AC /* Pods-MESServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MESServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MESServiceExtension/Pods-MESServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		ACC233F069D99297D20FD632 /* NotificationNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
-		B9970752EF8E2A0909680DC8 /* Pods-mobile-engage-sample-app-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios.release.xcconfig"; sourceTree = "<group>"; };
-		D48C1D5374353018BD9E70DA /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDAEF19066D1FF1A4B0A5F2E /* Pods_mobile_engage_sample_app_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_engage_sample_app_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F33F2C1E43578D3FF85A10C9 /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1F81382647A93A7C3721775 /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2229927BC6C2D4FBBFB626F /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-engage-sample-app-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		F6E9F98C52F442B693CA3FD7 /* Pods_mobile_engage_sample_app_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_engage_sample_app_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				16E056AC1EA8A76500DAE104 /* UserNotifications.framework in Frameworks */,
 				8AB649801E83FDDB00C8E6D7 /* libstdc++.tbd in Frameworks */,
 				8AB649811E83FDDB00C8E6D7 /* libz.tbd in Frameworks */,
-				4A548D398C94F368C611D612 /* Pods_mobile_engage_sample_app_ios.framework in Frameworks */,
+				67579BC822FE6B7D747F19EF /* Pods_mobile_engage_sample_app_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD478D7C53540FF28EAC11A /* Pods_mobile_engage_sample_app_iosTests.framework in Frameworks */,
+				4D7D52564DAD0D71557DC7B9 /* Pods_mobile_engage_sample_app_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,26 +136,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD320743E9A7D9610ECB90F8 /* Pods_MESServiceExtension.framework in Frameworks */,
+				71F34ADFBBF2573A0E6B64C0 /* Pods_MESServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AE2C97359690F060F32502A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				17729C0176DABE7079FF276D /* Pods-MESServiceExtension.debug.xcconfig */,
-				036C36B5F3AF0EC0516164DE /* Pods-MESServiceExtension.release.xcconfig */,
-				89F04F86F8D3A3D36024DC0E /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */,
-				B9970752EF8E2A0909680DC8 /* Pods-mobile-engage-sample-app-ios.release.xcconfig */,
-				D48C1D5374353018BD9E70DA /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */,
-				F33F2C1E43578D3FF85A10C9 /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		16232ADD8E5A572A1B4BA7CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +150,9 @@
 				16E056A91EA8A76500DAE104 /* UserNotifications.framework */,
 				8AB6497E1E83FDDB00C8E6D7 /* libstdc++.tbd */,
 				8AB6497F1E83FDDB00C8E6D7 /* libz.tbd */,
-				7F4FDD621A090CD914CDC363 /* Pods_MESServiceExtension.framework */,
-				DDAEF19066D1FF1A4B0A5F2E /* Pods_mobile_engage_sample_app_ios.framework */,
-				2B2D992805CB7ABE07633BFD /* Pods_mobile_engage_sample_app_iosTests.framework */,
+				58F4F7915FF5E284275A22BA /* Pods_MESServiceExtension.framework */,
+				8389FC87C6FA63051A562A59 /* Pods_mobile_engage_sample_app_ios.framework */,
+				F6E9F98C52F442B693CA3FD7 /* Pods_mobile_engage_sample_app_iosTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,8 +213,21 @@
 				32C6F2BAC9CEB6C41AADDCBC /* mobile-engage-sample-app-iosTests */,
 				32C6FAA9777AE1DDD9DB45B6 /* mobile-engage-sample-app-iosUITests */,
 				16232ADD8E5A572A1B4BA7CF /* Frameworks */,
-				0AE2C97359690F060F32502A /* Pods */,
+				67B1E79BE760A90FE268B1AD /* Pods */,
 			);
+			sourceTree = "<group>";
+		};
+		67B1E79BE760A90FE268B1AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46568A0D11F73E228B4C3E22 /* Pods-MESServiceExtension.debug.xcconfig */,
+				8D0F1C17132312497040D2AC /* Pods-MESServiceExtension.release.xcconfig */,
+				5D40F2192AC47B07F85F217C /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */,
+				3777AB6987B9FA24E244FB7A /* Pods-mobile-engage-sample-app-ios.release.xcconfig */,
+				D1F81382647A93A7C3721775 /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */,
+				D2229927BC6C2D4FBBFB626F /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8A77AC4C1F46E31700F9F2A6 /* MESServiceExtension */ = {
@@ -247,12 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C6F650CDF7F46157CFD8C4 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-ios" */;
 			buildPhases = (
-				A5AD29DBD6BA013C4B211078 /* [CP] Check Pods Manifest.lock */,
+				61A120D19AF125B94F1CE14D /* [CP] Check Pods Manifest.lock */,
 				32C6F44E63DD45B2CDA7F57C /* Sources */,
 				32C6F032A875A9F48F40FE69 /* Frameworks */,
 				32C6F25E400BE65D023B4B7B /* Resources */,
 				16EFEBEF1F052B760050938F /* Embed App Extensions */,
-				DB97144FC7011CDF76EEBC00 /* [CP] Embed Pods Frameworks */,
+				492B344A7AE266F6B1D944CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,11 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C6F52928A00F6A035F7B65 /* Build configuration list for PBXNativeTarget "mobile-engage-sample-app-iosTests" */;
 			buildPhases = (
-				5111FAE5E00D8E6839E4986D /* [CP] Check Pods Manifest.lock */,
+				7BF22EE29100CC286CB4015C /* [CP] Check Pods Manifest.lock */,
 				32C6F16DF38C3797BFE2A64F /* Sources */,
 				32C6FFC2B6E3A5842728B9A8 /* Frameworks */,
 				32C6FB6E94744AFF28F49161 /* Resources */,
-				4D6682DEA394F5420C055D79 /* [CP] Embed Pods Frameworks */,
+				DF5278148F9D5A4B9455E503 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,7 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A77AC551F46E31700F9F2A6 /* Build configuration list for PBXNativeTarget "MESServiceExtension" */;
 			buildPhases = (
-				8D8A3AF64C39DFC88FF8B6BD /* [CP] Check Pods Manifest.lock */,
+				973BFA3CFE05B887F361248A /* [CP] Check Pods Manifest.lock */,
 				8A77AC471F46E31700F9F2A6 /* Sources */,
 				8A77AC481F46E31700F9F2A6 /* Frameworks */,
 				8A77AC491F46E31700F9F2A6 /* Resources */,
@@ -410,79 +410,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D6682DEA394F5420C055D79 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5111FAE5E00D8E6839E4986D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mobile-engage-sample-app-iosTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D8A3AF64C39DFC88FF8B6BD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MESServiceExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5AD29DBD6BA013C4B211078 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mobile-engage-sample-app-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB97144FC7011CDF76EEBC00 /* [CP] Embed Pods Frameworks */ = {
+		492B344A7AE266F6B1D944CF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,6 +430,78 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-ios/Pods-mobile-engage-sample-app-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A120D19AF125B94F1CE14D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobile-engage-sample-app-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BF22EE29100CC286CB4015C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobile-engage-sample-app-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		973BFA3CFE05B887F361248A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MESServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5278148F9D5A4B9455E503 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-engage-sample-app-iosTests/Pods-mobile-engage-sample-app-iosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -678,7 +678,7 @@
 		};
 		32C6F27509ECD37143223EE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89F04F86F8D3A3D36024DC0E /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */;
+			baseConfigurationReference = 5D40F2192AC47B07F85F217C /* Pods-mobile-engage-sample-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -698,7 +698,7 @@
 		};
 		32C6F2AB2F73BDF49C76267A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9970752EF8E2A0909680DC8 /* Pods-mobile-engage-sample-app-ios.release.xcconfig */;
+			baseConfigurationReference = 3777AB6987B9FA24E244FB7A /* Pods-mobile-engage-sample-app-ios.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -744,7 +744,7 @@
 		};
 		32C6F6EC8CCAB70BD609BE33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F33F2C1E43578D3FF85A10C9 /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */;
+			baseConfigurationReference = D2229927BC6C2D4FBBFB626F /* Pods-mobile-engage-sample-app-iosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mobile-engage-sample-app-ios.app/mobile-engage-sample-app-ios";
 				INFOPLIST_FILE = "mobile-engage-sample-app-iosTests/Info.plist";
@@ -758,7 +758,7 @@
 		};
 		32C6FF1FC40CCC63558FB1B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D48C1D5374353018BD9E70DA /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */;
+			baseConfigurationReference = D1F81382647A93A7C3721775 /* Pods-mobile-engage-sample-app-iosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mobile-engage-sample-app-ios.app/mobile-engage-sample-app-ios";
 				INFOPLIST_FILE = "mobile-engage-sample-app-iosTests/Info.plist";
@@ -772,7 +772,7 @@
 		};
 		8A77AC531F46E31700F9F2A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17729C0176DABE7079FF276D /* Pods-MESServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = 46568A0D11F73E228B4C3E22 /* Pods-MESServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mobile Emarsys (K435VZVJ6U)";
@@ -791,7 +791,7 @@
 		};
 		8A77AC541F46E31700F9F2A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 036C36B5F3AF0EC0516164DE /* Pods-MESServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 8D0F1C17132312497040D2AC /* Pods-MESServiceExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Emarsys-Technologies Informatikai Szolgaltato Korlatolt Felelossegu Tarsasag";
