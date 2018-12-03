@@ -20,7 +20,7 @@ def buildAndTest(platform, udid) {
     try {
         sh "mkdir /tmp/$uuid"
         retry(3) {
-            sh "cd $udid/ios-mobile-engage-sample-app && scan --scheme mobile-engage-sample-app-iosUITests -d 'platform=$platform,id=$udid' --derived_data_path $uuid -o test_output/unit/"
+            sh "cd $udid/ios-mobile-engage-sample-app && fastlane scan --scheme mobile-engage-sample-app-iosUITests -d 'platform=$platform,id=$udid' --derived_data_path $uuid -o test_output/unit/"
         }
     } catch(e) {
         currentBuild.result = 'FAILURE'
