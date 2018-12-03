@@ -59,7 +59,7 @@ node('master') {
       }
       stage('Create Enterprise Distribution Package') {
         sh "mkdir artifacts"
-        def udid = env.IPAD_PRO
+        def udid = env.IOS93SIMULATOR
         sh "cd $udid/ios-mobile-engage-sample-app && gym --scheme mobile-engage-sample-app-ios --export_method enterprise -o ../../artifacts/ --verbose"
         archiveArtifacts "artifacts/*"
       }
