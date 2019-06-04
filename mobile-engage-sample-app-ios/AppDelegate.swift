@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEEventHandler {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         window?.tintColor = UIColor(red: 101 / 255.0, green: 151 / 255.0, blue: 207 / 255.0, alpha: 1.0)
 
@@ -47,11 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEEventHandler {
         return true
     }
 
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         return MobileEngage.trackDeepLink(with: userActivity, sourceHandler: { url in
-            if let source = url {
-                print(source)
-            }
+            print(url)
         })
     }
 

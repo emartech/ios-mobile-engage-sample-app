@@ -35,7 +35,7 @@ class MESInboxViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     //MARK: Public methods
-    public func refresh(refreshControl: UIRefreshControl?) {
+    @objc public func refresh(refreshControl: UIRefreshControl?) {
         MobileEngage.inbox.fetchNotifications(resultBlock: { [unowned self] notificationInboxStatus in
             guard let inboxStatus = notificationInboxStatus else { return }
             self.notifications = inboxStatus.notifications

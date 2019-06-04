@@ -104,7 +104,7 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
         MobileEngage.inApp.paused = sender.isOn
     }
 
-    func backgroundTapped() {
+    @objc func backgroundTapped() {
         self.view.endEditing(true)
     }
 
@@ -142,7 +142,7 @@ class MESMobileEngageViewController: UIViewController, MobileEngageStatusDelegat
 extension Array where Element: Equatable {
 
     mutating func remove(_ element: Element) {
-        guard let elementIndex = self.index(where: { $0 == element }) else {
+        guard let elementIndex = self.firstIndex(where: { $0 == element }) else {
             return
         }
         self.remove(at: elementIndex)
