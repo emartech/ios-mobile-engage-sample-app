@@ -114,7 +114,7 @@ class MobileEngageSampleAppUITests: XCTestCase {
         element.tap()
 
         let deleteString = stringValue.map { _ in
-            XCUIKeyboardKeyDelete
+            XCUIKeyboardKey.delete.rawValue
         }.joined(separator: "")
 
         element.typeText(deleteString)
