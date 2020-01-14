@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MEEventHandler {
         window?.tintColor = UIColor(red: 101 / 255.0, green: 151 / 255.0, blue: 207 / 255.0, alpha: 1.0)
 
         let config = MEConfig.make { builder in
-            builder.setExperimentalFeatures([INAPP_MESSAGING, USER_CENTRIC_INBOX]);
+            builder.setExperimentalFeatures([USER_CENTRIC_INBOX]);
             if let applicationCode = ProcessInfo.processInfo.environment["applicationCode"] as? String,
                let applicationPassword = ProcessInfo.processInfo.environment["applicationPassword"] as? String {
                 builder.setCredentialsWithApplicationCode(applicationCode, applicationPassword: applicationPassword)
